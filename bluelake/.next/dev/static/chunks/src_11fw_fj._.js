@@ -35,7 +35,7 @@ function ExperiencesStrip() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "m-0 flex items-center gap-2 font-sans text-[11px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase",
+                            className: "m-0 flex items-center gap-2 font-sans text-[16px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase",
                             children: "Experiences That Stay"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
@@ -48,15 +48,20 @@ function ExperiencesStrip() {
                             children: "More Than Just a Stay"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                            lineNumber: 31,
+                            lineNumber: 30,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                            fileName: "[project]/src/components/ExperiencesStrip.tsx",
+                            lineNumber: 36,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-[18px] max-w-[270px] font-sans text-[13px] leading-[1.65] text-text-on-dark-muted",
+                            className: "mt-[18px] max-w-[270px] font-sans  text-text-on-dark-muted flex gap-1",
                             children: "From adventure to relaxation, explore experiences that connect you with nature and create unforgettable memories."
                         }, void 0, false, {
                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                            lineNumber: 38,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this)
                     ]
@@ -87,25 +92,25 @@ function ExperiencesStrip() {
                                             className: "absolute inset-0 h-full w-full object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_30%,rgba(0,0,0,0.2)_52%,rgba(0,0,0,0.9)_100%)]"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 65,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, card.image || index, true, {
                                     fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                            lineNumber: 46,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -120,12 +125,12 @@ function ExperiencesStrip() {
                                         "aria-hidden": "true"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                    lineNumber: 73,
+                                    lineNumber: 72,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -137,24 +142,24 @@ function ExperiencesStrip() {
                                         "aria-hidden": "true"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                        lineNumber: 88,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 81,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                            lineNumber: 72,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ExperiencesStrip.tsx",
-                    lineNumber: 45,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this)
             ]
@@ -231,113 +236,50 @@ function Footer() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 flex items-start px-5 pt-[40px] sm:px-8 lg:px-[7.5%]",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "max-w-[440px]",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "m-0 text-[11px] font-bold tracking-[0.14em] text-text-on-dark uppercase",
-                                        children: "Managed By"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 46,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        id: "managed-title",
-                                        className: "mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white",
-                                        children: "Ante Meridiem Hotels & Resorts"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 50,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-3.5 text-[13px] leading-[1.7] text-text-on-dark",
-                                        children: "With a commitment to excellence, we bring world-class hospitality, operational expertise and a passion for creating memorable stays."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: "#about-ante-meridiem",
-                                        className: "mt-5 inline-flex items-center bg-white px-6 py-3.5 text-[11px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100",
-                                        children: "Book Now"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 62,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 45,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                "aria-hidden": "true",
-                                className: "absolute top-1/2 hidden -translate-y-1/2 text-center text-white sm:right-6 md:block lg:right-[90px]",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "mb-3 inline-flex h-[72px] w-[72px] items-center justify-center rounded-full border border-gold text-gold",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                            width: "28",
-                                            height: "28",
-                                            viewBox: "0 0 24 24",
-                                            fill: "none",
-                                            stroke: "currentColor",
-                                            strokeWidth: "1.2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                    d: "M12 2c1.8 2.6 3.2 4.6 3.2 7 0 1.9-1.4 3.1-3.2 3.1S8.8 11.9 8.8 10c0-2.4 1.4-4.4 3.2-8z"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Footer.tsx",
-                                                    lineNumber: 84,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                    d: "M12 12.5c3 0 5.4 2.1 5.4 4.9 0 2.6-2.3 4.6-5.4 5.1-3.1-.5-5.4-2.5-5.4-5.1 0-2.8 2.4-4.9 5.4-4.9z"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Footer.tsx",
-                                                    lineNumber: 85,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Footer.tsx",
-                                            lineNumber: 76,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 75,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "m-0 font-sans text-base font-semibold tracking-[0.06em]",
-                                        children: "ANTE MERIDIEM"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 89,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-1 text-[9px] tracking-[0.18em] text-text-on-dark-muted uppercase",
-                                        children: "Hotels & Resorts"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 93,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 71,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "max-w-[440px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "m-0 text-[11px] font-bold tracking-[0.14em] text-text-on-dark uppercase",
+                                    children: "Managed By"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 46,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    id: "managed-title",
+                                    className: "mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white",
+                                    children: "Ante Meridiem Hotels & Resorts"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 50,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-3.5  text-text-on-dark",
+                                    children: "With a commitment to excellence, we bring world-class hospitality, operational expertise and a passion for creating memorable stays."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 57,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "#about-ante-meridiem",
+                                    className: "mt-5 inline-flex items-center bg-white px-6 py-3.5 text-[11px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100",
+                                    children: "Book Now"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Footer.tsx",
+                                    lineNumber: 62,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Footer.tsx",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/src/components/Footer.tsx",
                         lineNumber: 44,
                         columnNumber: 9
@@ -358,11 +300,11 @@ function Footer() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "m-0 flex items-center gap-2 text-[11px] font-bold tracking-[0.12em] text-text-on-dark uppercase before:block before:h-px before:w-5 before:bg-gold",
+                                        className: "m-0 flex items-center gap-2 text-[11px] font-bold tracking-[0.12em] text-text-on-dark uppercase before:block before:h-px before:w-5",
                                         children: "Let’s Connect"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 109,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -370,32 +312,32 @@ function Footer() {
                                         children: "Plan Your Escape to Serenity"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 88,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-3 max-w-[30ch] text-[12px] leading-[1.55] text-text-on-dark-muted",
+                                        className: "mt-3 max-w-[30ch] text-[14px]  text-text-on-dark-muted",
                                         children: "Book your stay or reach out to us for enquiries, events and special offers."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 117,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 108,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "md:border-l md:border-white/15 md:pl-[30px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase",
+                                        className: "mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase",
                                         children: "Location"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 125,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -405,29 +347,29 @@ function Footer() {
                                                 "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 105,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "m-0 text-[12px] leading-[1.5] text-text-on-dark",
+                                                className: "m-0 text-[14px] leading-[1.5] text-text-on-dark",
                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contactDetails"].address
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 107,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 129,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase",
+                                        className: "mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase",
                                         children: "Phone"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 112,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -437,29 +379,29 @@ function Footer() {
                                                 "aria-hidden": "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 117,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "m-0 text-[12px] leading-[1.5] text-text-on-dark",
+                                                className: "m-0 text-[14px] leading-[1.5] text-text-on-dark",
                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contactDetails"].phones.join(" / ")
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 119,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase",
+                                        className: "mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase",
                                         children: "Email"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 124,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -481,51 +423,51 @@ function Footer() {
                                                         rx: "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.tsx",
-                                                        lineNumber: 162,
+                                                        lineNumber: 137,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                         d: "m3 7 9 6 9-6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Footer.tsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 138,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 129,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "m-0 text-[12px] leading-[1.5] text-text-on-dark",
+                                                className: "m-0 text-[14px] leading-[1.5] text-text-on-dark",
                                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["contactDetails"].email
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 166,
+                                                lineNumber: 141,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 153,
+                                        lineNumber: 128,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 124,
+                                lineNumber: 99,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "md:border-l md:border-white/15 md:pl-[30px]",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase",
+                                        className: "mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase",
                                         children: "Follow Us"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 149,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -539,12 +481,12 @@ function Footer() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
-                                                    lineNumber: 184,
+                                                    lineNumber: 159,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 179,
+                                                lineNumber: 154,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -555,12 +497,12 @@ function Footer() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
-                                                    lineNumber: 192,
+                                                    lineNumber: 167,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 187,
+                                                lineNumber: 162,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -571,34 +513,34 @@ function Footer() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
-                                                    lineNumber: 200,
+                                                    lineNumber: 175,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 170,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 178,
+                                        lineNumber: 153,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase",
+                                        className: "mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase",
                                         children: "Newsletter"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 179,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mb-3 text-[12px] leading-[1.5] text-text-on-dark",
+                                        className: "mb-3 text-[14px] leading-[1.5] text-text-on-dark",
                                         children: "Stay updated with our latest offers and experiences."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 208,
+                                        lineNumber: 183,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -612,7 +554,7 @@ function Footer() {
                                                 children: "Email address"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 217,
+                                                lineNumber: 192,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -625,7 +567,7 @@ function Footer() {
                                                 className: "min-w-0 flex-1 border-none bg-white px-3 font-sans text-[11px] text-navy-deep placeholder:text-[#777] focus:outline-none"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 221,
+                                                lineNumber: 196,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -636,49 +578,49 @@ function Footer() {
                                                     "aria-hidden": "true"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Footer.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 211,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Footer.tsx",
-                                                lineNumber: 231,
+                                                lineNumber: 206,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 212,
+                                        lineNumber: 187,
                                         columnNumber: 13
                                     }, this),
                                     submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         role: "status",
-                                        className: "mt-1.5 text-[10px] text-gold",
+                                        className: "mt-1.5 text-[14px] text-gold",
                                         children: "Thanks — you’re subscribed!"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 241,
+                                        lineNumber: 216,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 173,
+                                lineNumber: 148,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Footer.tsx",
-                        lineNumber: 105,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mx-auto mt-7 flex min-h-[38px] max-w-[1280px] flex-col items-start gap-3 border-t border-white/22 pt-3 pb-3.5 font-sans text-[10px] text-text-on-dark-muted sm:flex-row sm:items-center sm:justify-between sm:pb-0",
+                        className: "mx-auto mt-7 flex min-h-[38px] max-w-[1280px] flex-col items-start gap-3 border-t border-white/22 pt-3 pb-3.5 font-sans text-[14px] text-text-on-dark-muted sm:flex-row sm:items-center sm:justify-between sm:pb-0",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "© 2025 The Blue Lake, Igatpuri. All Rights Reserved."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 250,
+                                lineNumber: 225,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -689,7 +631,7 @@ function Footer() {
                                         children: "Privacy Policy"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 255,
+                                        lineNumber: 230,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -697,7 +639,7 @@ function Footer() {
                                         children: "Terms & Conditions"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 256,
+                                        lineNumber: 231,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -705,25 +647,25 @@ function Footer() {
                                         children: "Website by AM Digital"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.tsx",
-                                        lineNumber: 257,
+                                        lineNumber: 232,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.tsx",
-                                lineNumber: 254,
+                                lineNumber: 229,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Footer.tsx",
-                        lineNumber: 249,
+                        lineNumber: 224,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Footer.tsx",
-                lineNumber: 101,
+                lineNumber: 76,
                 columnNumber: 7
             }, this)
         ]
@@ -955,7 +897,7 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                         className: "absolute left-0 bottom-[90px] w-full px-5 text-white sm:px-8 md:bottom-[130px] lg:px-16",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mb-3.5 text-[11px] font-semibold tracking-[0.18em] text-text-on-dark uppercase",
+                                className: "mb-3.5 font-semibold tracking-[0.18em] text-text-on-dark uppercase",
                                 children: "Lakeside Serenity. Timeless Memories."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
@@ -971,7 +913,7 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "mt-[18px] max-w-[38ch] text-sm leading-[1.6] text-text-on-dark",
+                                className: "mt-[18px] max-w-[38ch]  text-text-on-dark",
                                 children: "A serene lakeside resort in Murambi, Igatpuri, where nature’s calm meets refined comfort."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
@@ -1005,12 +947,12 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.tsx",
                                     lineNumber: 150,
-                                    columnNumber: 5
+                                    columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
                                 lineNumber: 136,
-                                columnNumber: 3
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: `tel:${phoneNumber}`,
@@ -1021,12 +963,12 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.tsx",
                                     lineNumber: 166,
-                                    columnNumber: 5
+                                    columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
                                 lineNumber: 154,
-                                columnNumber: 3
+                                columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: mapsUrl,
@@ -1039,12 +981,12 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Hero.tsx",
                                     lineNumber: 184,
-                                    columnNumber: 5
+                                    columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Hero.tsx",
                                 lineNumber: 170,
-                                columnNumber: 3
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
@@ -1063,10 +1005,10 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                     "aria-label": "Check availability",
                     onSubmit: handleSubmit,
-                    className: "relative mx-auto grid max-w-[1280px] grid-cols-1 overflow-visible rounded-[8px] bg-white shadow-[var(--shadow-float)] md:grid-cols-[1fr_1fr_1.2fr_auto] md:items-stretch",
+                    className: "relative mx-auto grid max-w-[1280px] grid-cols-1 overflow-visible rounded-[8px] bg-white md:grid-cols-[1fr_1fr_1.2fr_auto] md:items-stretch",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                            className: "relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0 md:border-r",
+                            className: "relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[10px] font-bold tracking-[0.08em] text-navy-deep uppercase",
@@ -1115,7 +1057,7 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                            className: "relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0 md:border-r",
+                            className: "relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[10px] font-bold tracking-[0.08em] text-navy-deep uppercase",
@@ -1163,7 +1105,7 @@ function Hero({ photoSrc, whatsappNumber = "911234567890", phoneNumber = "+91123
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             ref: guestsFieldRef,
                             onClick: ()=>setGuestsOpen((v)=>!v),
-                            className: "relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0 md:border-r",
+                            className: "relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[10px] font-bold tracking-[0.08em] text-navy-deep uppercase",
@@ -1525,7 +1467,38 @@ var _s = __turbopack_context__.k.signature();
 function RoomsSuites() {
     _s();
     const [currentImages, setCurrentImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
-    const changeImage = (roomName, direction, total)=>{
+    /*
+   * AUTO IMAGE SLIDER
+   * Changes image every 3 seconds
+   */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "RoomsSuites.useEffect": ()=>{
+            const interval = setInterval({
+                "RoomsSuites.useEffect.interval": ()=>{
+                    setCurrentImages({
+                        "RoomsSuites.useEffect.interval": (prev)=>{
+                            const nextImages = {
+                                ...prev
+                            };
+                            __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["rooms"].slice(0, 4).forEach({
+                                "RoomsSuites.useEffect.interval": (room)=>{
+                                    if (!room.images || room.images.length <= 1) return;
+                                    const currentIndex = prev[room.name] ?? 0;
+                                    nextImages[room.name] = (currentIndex + 1) % room.images.length;
+                                }
+                            }["RoomsSuites.useEffect.interval"]);
+                            return nextImages;
+                        }
+                    }["RoomsSuites.useEffect.interval"]);
+                }
+            }["RoomsSuites.useEffect.interval"], 3000);
+            return ({
+                "RoomsSuites.useEffect": ()=>clearInterval(interval)
+            })["RoomsSuites.useEffect"];
+        }
+    }["RoomsSuites.useEffect"], []);
+    /*
+   * MANUAL IMAGE CHANGE
+   */ const changeImage = (roomName, direction, total)=>{
         setCurrentImages((prev)=>{
             const current = prev[roomName] ?? 0;
             const next = (current + direction + total) % total;
@@ -1534,6 +1507,14 @@ function RoomsSuites() {
                 [roomName]: next
             };
         });
+    };
+    /*
+   * GO TO SPECIFIC IMAGE
+   */ const goToImage = (roomName, index)=>{
+        setCurrentImages((prev)=>({
+                ...prev,
+                [roomName]: index
+            }));
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "rooms",
@@ -1546,13 +1527,13 @@ function RoomsSuites() {
                     className: "mb-[38px] flex flex-col items-center text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "flex items-center gap-2 text-[9px] font-bold tracking-[0.16em] text-gold uppercase",
+                            className: "flex items-center gap-2 font-bold tracking-[0.16em] text-gold uppercase",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "block h-px w-[20px] bg-gold"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 "Stay in Comfort",
@@ -1560,13 +1541,13 @@ function RoomsSuites() {
                                     className: "block h-px w-[20px] bg-gold"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                            lineNumber: 42,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1575,26 +1556,27 @@ function RoomsSuites() {
                             children: "Rooms & Suites"
                         }, void 0, false, {
                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                            lineNumber: 48,
+                            lineNumber: 91,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "mt-[15px] max-w-[480px] text-[11px] leading-[1.65] text-text-muted",
+                            className: "mt-[15px] max-w-[480px]  text-text-muted",
                             children: "Spacious, elegant and thoughtfully designed spaces for a relaxing stay."
                         }, void 0, false, {
                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                            lineNumber: 55,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                    lineNumber: 41,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                     className: "grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-4",
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$content$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["rooms"].slice(0, 4).map((room)=>{
+                        const images = room.images ?? [];
                         const currentIndex = currentImages[room.name] ?? 0;
                         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                             className: "flex min-w-0 flex-col overflow-hidden rounded-[8px] bg-white shadow-[0_2px_12px_rgba(0,0,0,0.06)]",
@@ -1602,107 +1584,68 @@ function RoomsSuites() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "group relative aspect-[1.55/1] overflow-hidden",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: room.images[currentIndex],
+                                        images.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: images[currentIndex],
                                             alt: room.name,
-                                            className: "h-full w-full object-cover transition-all duration-500"
+                                            className: "h-full w-full object-cover transition-all duration-700 ease-in-out"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                            lineNumber: 74,
-                                            columnNumber: 19
-                                        }, this),
-                                        room.images.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            "aria-label": `Previous image of ${room.name}`,
-                                            onClick: ()=>changeImage(room.name, -1, room.images.length),
-                                            className: "absolute left-[10px] top-1/2 flex h-[32px] w-[32px] -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ChevronLeftCircle"], {
-                                                "aria-hidden": "true",
-                                                className: "h-[18px] w-[18px]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 23
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/RoomsSuites.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 122,
                                             columnNumber: 21
                                         }, this),
-                                        room.images.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            "aria-label": `Next image of ${room.name}`,
-                                            onClick: ()=>changeImage(room.name, 1, room.images.length),
-                                            className: "absolute right-[10px] top-1/2 flex h-[32px] w-[32px] -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ChevronRightCircle"], {
-                                                "aria-hidden": "true",
-                                                className: "h-[18px] w-[18px]"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                lineNumber: 115,
-                                                columnNumber: 23
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/RoomsSuites.tsx",
-                                            lineNumber: 103,
-                                            columnNumber: 21
-                                        }, this),
-                                        room.images.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute bottom-[10px] left-1/2 flex -translate-x-1/2 gap-[5px]",
-                                            children: room.images.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        images.length > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute bottom-[10px] left-1/2 flex -translate-x-1/2 items-center gap-[5px]",
+                                            children: images.map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                     type: "button",
                                                     "aria-label": `Go to image ${index + 1}`,
-                                                    onClick: ()=>setCurrentImages((prev)=>({
-                                                                ...prev,
-                                                                [room.name]: index
-                                                            })),
-                                                    className: `h-[5px] w-[5px] rounded-full transition-all ${index === currentIndex ? "w-[14px] bg-white" : "bg-white/60"}`
+                                                    onClick: ()=>goToImage(room.name, index),
+                                                    className: `h-[5px] rounded-full transition-all duration-300 ${index === currentIndex ? "w-[14px] bg-white" : "w-[5px] bg-white/60"}`
                                                 }, index, false, {
                                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                    lineNumber: 126,
+                                                    lineNumber: 135,
                                                     columnNumber: 25
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                            lineNumber: 124,
+                                            lineNumber: 133,
                                             columnNumber: 21
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                    lineNumber: 72,
+                                    lineNumber: 119,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex flex-1 flex-col px-[19px] pt-[18px] pb-[20px]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-[12px] font-bold tracking-[0.04em] text-navy-deep uppercase",
+                                            className: "text-[16px] font-bold leading-[1.3] tracking-[0.04em] text-navy-deep uppercase",
                                             children: room.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                            lineNumber: 150,
+                                            lineNumber: 157,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "mt-[14px] flex flex-wrap items-center gap-x-[10px] gap-y-2 text-[9.5px] text-text-muted",
+                                            className: "mt-[14px] flex flex-wrap items-center gap-x-[10px] gap-y-2 text-[14px] leading-[1.4] text-text-muted",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "inline-flex items-center gap-[4px] whitespace-nowrap",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GuestsIcon"], {
                                                             "aria-hidden": "true",
-                                                            className: "h-[12px] w-[12px] shrink-0 text-navy-deep"
+                                                            className: "h-[14px] w-[14px] shrink-0 text-navy-deep"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                            lineNumber: 157,
+                                                            lineNumber: 166,
                                                             columnNumber: 23
                                                         }, this),
                                                         room.guests
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 165,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1710,17 +1653,17 @@ function RoomsSuites() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BedIcon"], {
                                                             "aria-hidden": "true",
-                                                            className: "h-[12px] w-[12px] shrink-0 text-navy-deep"
+                                                            className: "h-[14px] w-[14px] shrink-0 text-navy-deep"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                            lineNumber: 165,
+                                                            lineNumber: 176,
                                                             columnNumber: 23
                                                         }, this),
                                                         room.beds
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                    lineNumber: 164,
+                                                    lineNumber: 175,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1728,56 +1671,56 @@ function RoomsSuites() {
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$icons$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PinIcon"], {
                                                             "aria-hidden": "true",
-                                                            className: "h-[12px] w-[12px] shrink-0 text-navy-deep"
+                                                            className: "h-[14px] w-[14px] shrink-0 text-navy-deep"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                            lineNumber: 173,
+                                                            lineNumber: 186,
                                                             columnNumber: 23
                                                         }, this),
                                                         room.view
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                                    lineNumber: 172,
+                                                    lineNumber: 185,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                                            lineNumber: 154,
+                                            lineNumber: 162,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                                    lineNumber: 148,
+                                    lineNumber: 154,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, room.name, true, {
                             fileName: "[project]/src/components/RoomsSuites.tsx",
-                            lineNumber: 67,
+                            lineNumber: 113,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/components/RoomsSuites.tsx",
-                    lineNumber: 62,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/RoomsSuites.tsx",
-            lineNumber: 38,
+            lineNumber: 79,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/RoomsSuites.tsx",
-        lineNumber: 33,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }
-_s(RoomsSuites, "8KWNbTtmMiTcgvMB4ExJOYaeFds=");
+_s(RoomsSuites, "+YUVpuhpSrD18BAk13pibVbtPLo=");
 _c = RoomsSuites;
 var _c;
 __turbopack_context__.k.register(_c, "RoomsSuites");
@@ -2659,16 +2602,22 @@ const experienceCards = [
         // title: "Outdoor Dining",
         alt: "String-lit outdoor dining setup by the lake",
         image: "/images/IMG_8935_11zon.jpg"
+    },
+    {
+        // title: "Nature Trails",
+        alt: "Guests walking a forest nature trail",
+        image: "/images/BLR_EDIITED-24_11zon.jpg"
+    },
+    {
+        // title: "Outdoor Dining",
+        alt: "String-lit outdoor dining setup by the lake",
+        image: "/images/DJI_0908_11zon.jpg"
     }
 ];
 const galleryImages = [
     {
-        image: "/gallery/BLR_EDIITED-63_11zon.jpg",
+        image: "/images/DJI_0903_11zon.jpg",
         alt: "Lakeside view of The Blue Lake Resort"
-    },
-    {
-        image: "/gallery/DJI_0903_11zon.jpg",
-        alt: "Aerial view of the resort property"
     },
     {
         image: "/gallery/BLR_EDIITED-65_11zon.jpg",
@@ -2685,6 +2634,10 @@ const galleryImages = [
     {
         image: "/gallery/BLR_EDIITED-21_11zon.jpg",
         alt: "Resort outdoor area"
+    },
+    {
+        image: "/rooms/super/sup.jpg",
+        alt: "Aerial view of the resort property"
     },
     {
         image: "/gallery/BLR_EDIITED-48_11zon.jpg",

@@ -22,10 +22,10 @@ export function FeatureStrip() {
     <section
       id="about"
       aria-labelledby="feature-strip-title"
-      className="bg-white px-5 pt-[50px] pb-[65px] text-center sm:px-8 lg:px-[52px]"
+      className="bg-white px-5 pt-[50px] pb-[65px] text-center sm:px-8 lg:px-[52px] flex-col flex gap-2"
     >
       {/* TOP LABEL */}
-      <p className="m-0 flex items-center justify-center gap-3 font-sans text-[11px] leading-[1.2] font-bold tracking-[0.15em] text-gold uppercase">
+      <p className="m-0 flex items-center justify-center gap-3 font-sans text font-bold tracking-[0.15em] text-gold uppercase">
         <span className="h-px w-[24px] bg-gold" />
         The Blue Lake Experience
         <span className="h-px w-[24px] bg-gold" />
@@ -45,7 +45,7 @@ export function FeatureStrip() {
       </p>
 
       {/* FEATURES */}
-      <ul className="mt-[75px] grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
+      <ul className="mt-[95px] grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 ">
         {featureItems.map((item, i) => {
           const Icon = iconMap[item.icon as keyof typeof iconMap];
 
@@ -85,8 +85,7 @@ export function FeatureStrip() {
                   min-h-[28px]
                   w-full
                   font-sans
-                  text-[12px]
-                  leading-[1.3]
+                  text-[16px]
                   font-bold
                   tracking-[0.06em]
                   text-navy-deep
@@ -102,8 +101,7 @@ export function FeatureStrip() {
                   mt-[8px]
                   max-w-[175px]
                   font-sans
-                  text-[12px]
-                  leading-[1.55]
+                  text-[13px]
                   text-text-muted
                 "
               >

@@ -116,17 +116,24 @@ export const experienceCards = [
     alt: "String-lit outdoor dining setup by the lake",
     image: "/images/IMG_8935_11zon.jpg",
   },
+  {
+    // title: "Nature Trails",
+    alt: "Guests walking a forest nature trail",
+    image: "/images/BLR_EDIITED-24_11zon.jpg",
+  },
+  {
+    // title: "Outdoor Dining",
+    alt: "String-lit outdoor dining setup by the lake",
+    image: "/images/DJI_0908_11zon.jpg",
+  },
 ];
 
 export const galleryImages = [
   {
-    image: "/gallery/BLR_EDIITED-63_11zon.jpg",
+    image: "/images/DJI_0903_11zon.jpg",
     alt: "Lakeside view of The Blue Lake Resort",
   },
-  {
-    image: "/gallery/DJI_0903_11zon.jpg",
-    alt: "Aerial view of the resort property",
-  },
+  
   {
     image: "/gallery/BLR_EDIITED-65_11zon.jpg",
     alt: "Poolside view at The Blue Lake Resort",
@@ -142,6 +149,10 @@ export const galleryImages = [
   {
     image: "/gallery/BLR_EDIITED-21_11zon.jpg",
     alt: "Resort outdoor area",
+  },
+  {
+    image: "/rooms/super/sup.jpg",
+    alt: "Aerial view of the resort property",
   },
   {
     image: "/gallery/BLR_EDIITED-48_11zon.jpg",

@@ -95,13 +95,13 @@ export function Hero({
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(100deg,rgba(11,37,69,0.72)_0%,rgba(11,37,69,0.32)_45%,rgba(11,37,69,0.05)_70%)]" />
 
         <div className="absolute left-0 bottom-[90px] w-full px-5 text-white sm:px-8 md:bottom-[130px] lg:px-16">
-          <p className="mb-3.5 text-[11px] font-semibold tracking-[0.18em] text-text-on-dark uppercase">
+          <p className="mb-3.5 font-semibold tracking-[0.18em] text-text-on-dark uppercase">
             Lakeside Serenity. Timeless Memories.
           </p>
           <h1 className="max-w-[14ch] font-display text-[clamp(30px,5.5vw,52px)] leading-[1.08] font-semibold uppercase">
             THE BLUE LAKE, IGATPURI
           </h1>
-          <p className="mt-[18px] max-w-[38ch] text-sm leading-[1.6] text-text-on-dark">
+          <p className="mt-[18px] max-w-[38ch]  text-text-on-dark">
             A serene lakeside resort in Murambi, Igatpuri, where nature&rsquo;s
             calm meets refined comfort.
           </p>
@@ -122,7 +122,7 @@ export function Hero({
         </div>
 
         <div
-  className="
+          className="
     absolute right-3 top-1/2 z-[5]
     flex -translate-y-1/2 flex-col
     overflow-hidden
@@ -131,14 +131,14 @@ export function Hero({
     shadow-[var(--shadow-card)]
     sm:right-8
   "
->
-  {/* WhatsApp */}
-  <a
-    href={`https://wa.me/${whatsappNumber}`}
-    target="_blank"
-    rel="noreferrer"
-    aria-label="WhatsApp chat"
-    className="
+        >
+          {/* WhatsApp */}
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp chat"
+            className="
       flex h-[52px] w-[48px]
       items-center justify-center
       !text-white
@@ -146,15 +146,15 @@ export function Hero({
       [&>svg]:h-[21px]
       [&>svg]:w-[21px]
     "
-  >
-    <WhatsAppIcon aria-hidden="true" />
-  </a>
+          >
+            <WhatsAppIcon aria-hidden="true" />
+          </a>
 
-  {/* Phone */}
-  <a
-    href={`tel:${phoneNumber}`}
-    aria-label="Call resort"
-    className="
+          {/* Phone */}
+          <a
+            href={`tel:${phoneNumber}`}
+            aria-label="Call resort"
+            className="
       flex h-[52px] w-[48px]
       items-center justify-center
       !text-white
@@ -162,17 +162,17 @@ export function Hero({
       [&>svg]:h-[20px]
       [&>svg]:w-[20px]
     "
-  >
-    <PhoneIcon aria-hidden="true" />
-  </a>
+          >
+            <PhoneIcon aria-hidden="true" />
+          </a>
 
-  {/* Location */}
-  <a
-    href={mapsUrl}
-    target="_blank"
-    rel="noreferrer"
-    aria-label="View on map"
-    className="
+          {/* Location */}
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View on map"
+            className="
       flex h-[52px] w-[48px]
       items-center justify-center
       !text-white
@@ -180,19 +180,19 @@ export function Hero({
       [&>svg]:h-[21px]
       [&>svg]:w-[21px]
     "
-  >
-    <PinIcon aria-hidden="true" />
-  </a>
-</div>
+          >
+            <PinIcon aria-hidden="true" />
+          </a>
+        </div>
       </div>
 
       <div className="relative z-10 -mt-[35px] px-4 md:-mt-[52px] md:px-0">
         <form
           aria-label="Check availability"
           onSubmit={handleSubmit}
-          className="relative mx-auto grid max-w-[1280px] grid-cols-1 overflow-visible rounded-[8px] bg-white shadow-[var(--shadow-float)] md:grid-cols-[1fr_1fr_1.2fr_auto] md:items-stretch"
+          className="relative mx-auto grid max-w-[1280px] grid-cols-1 overflow-visible rounded-[8px] bg-white md:grid-cols-[1fr_1fr_1.2fr_auto] md:items-stretch"
         >
-          <label className="relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0 md:border-r">
+          <label className="relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0">
             <span className="text-[10px] font-bold tracking-[0.08em] text-navy-deep uppercase">
               Check-in
             </span>
@@ -217,7 +217,7 @@ export function Hero({
             />
           </label>
 
-          <label className="relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0 md:border-r">
+          <label className="relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0">
             <span className="text-[10px] font-bold tracking-[0.08em] text-navy-deep uppercase">
               Check-out
             </span>
@@ -242,7 +242,7 @@ export function Hero({
           <div
             ref={guestsFieldRef}
             onClick={() => setGuestsOpen((v) => !v)}
-            className="relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0 md:border-r"
+            className="relative flex cursor-pointer flex-col gap-1.5 border-b border-border px-[22px] py-4 md:border-b-0"
           >
             <span className="text-[10px] font-bold tracking-[0.08em] text-navy-deep uppercase">
               Guests &amp; Rooms

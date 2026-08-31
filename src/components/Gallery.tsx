@@ -11,7 +11,7 @@ export function Gallery() {
 
         {/* Header */}
         <div className="mb-[38px] flex flex-col items-center text-center">
-          <p className="flex items-center gap-2 text-[9px] font-bold tracking-[0.16em] text-gold uppercase">
+          <p className="flex items-center gap-2 font-bold tracking-[0.16em] text-gold uppercase">
             <span className="block h-px w-[20px] bg-gold" />
             Gallery
             <span className="block h-px w-[20px] bg-gold" />
@@ -24,7 +24,7 @@ export function Gallery() {
             A Glimpse of Paradise
           </h2>
 
-          <p className="mt-[15px] max-w-[480px] text-[11px] leading-[1.65] text-text-muted">
+          <p className="mt-[15px] max-w-[480px] text-text-muted">
             See the beauty, feel the calm.
           </p>
         </div>

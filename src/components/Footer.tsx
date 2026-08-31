@@ -54,7 +54,7 @@ export function Footer() {
               Ante Meridiem Hotels &amp; Resorts
             </h2>
 
-            <p className="mt-3.5 text-[13px] leading-[1.7] text-text-on-dark">
+            <p className="mt-3.5  text-text-on-dark">
               With a commitment to excellence, we bring world-class hospitality,
               operational expertise and a passion for creating memorable stays.
             </p>
@@ -68,32 +68,7 @@ export function Footer() {
           </div>
 
           {/* Ante Meridiem Logo */}
-          <div
-            aria-hidden="true"
-            className="absolute top-1/2 hidden -translate-y-1/2 text-center text-white sm:right-6 md:block lg:right-[90px]"
-          >
-            <span className="mb-3 inline-flex h-[72px] w-[72px] items-center justify-center rounded-full border border-gold text-gold">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.2"
-              >
-                <path d="M12 2c1.8 2.6 3.2 4.6 3.2 7 0 1.9-1.4 3.1-3.2 3.1S8.8 11.9 8.8 10c0-2.4 1.4-4.4 3.2-8z" />
-                <path d="M12 12.5c3 0 5.4 2.1 5.4 4.9 0 2.6-2.3 4.6-5.4 5.1-3.1-.5-5.4-2.5-5.4-5.1 0-2.8 2.4-4.9 5.4-4.9z" />
-              </svg>
-            </span>
-
-            <p className="m-0 font-sans text-base font-semibold tracking-[0.06em]">
-              ANTE MERIDIEM
-            </p>
-
-            <p className="mt-1 text-[9px] tracking-[0.18em] text-text-on-dark-muted uppercase">
-              Hotels &amp; Resorts
-            </p>
-          </div>
+         
         </div>
       </section>
 
@@ -106,7 +81,7 @@ export function Footer() {
 
           {/* CONNECT */}
           <div>
-            <p className="m-0 flex items-center gap-2 text-[11px] font-bold tracking-[0.12em] text-text-on-dark uppercase before:block before:h-px before:w-5 before:bg-gold">
+            <p className="m-0 flex items-center gap-2 text-[11px] font-bold tracking-[0.12em] text-text-on-dark uppercase before:block before:h-px before:w-5">
               Let&rsquo;s Connect
             </p>
 
@@ -114,7 +89,7 @@ export function Footer() {
               Plan Your Escape to Serenity
             </h2>
 
-            <p className="mt-3 max-w-[30ch] text-[12px] leading-[1.55] text-text-on-dark-muted">
+            <p className="mt-3 max-w-[30ch] text-[14px]  text-text-on-dark-muted">
               Book your stay or reach out to us for enquiries, events and
               special offers.
             </p>
@@ -122,31 +97,31 @@ export function Footer() {
 
           {/* LOCATION */}
           <div className="md:border-l md:border-white/15 md:pl-[30px]">
-            <h3 className="mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase">
+            <h3 className="mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase">
               Location
             </h3>
 
             <div className="mb-4 flex gap-3 [&>svg]:mt-px [&>svg]:h-5 [&>svg]:w-5 [&>svg]:shrink-0 [&>svg]:text-white">
               <PinIcon aria-hidden="true" />
 
-              <p className="m-0 text-[12px] leading-[1.5] text-text-on-dark">
+              <p className="m-0 text-[14px] leading-[1.5] text-text-on-dark">
                 {contactDetails.address}
               </p>
             </div>
 
-            <h3 className="mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase">
+            <h3 className="mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase">
               Phone
             </h3>
 
             <div className="mb-4 flex gap-3 [&>svg]:mt-px [&>svg]:h-5 [&>svg]:w-5 [&>svg]:shrink-0 [&>svg]:text-white">
               <PhoneIcon aria-hidden="true" />
 
-              <p className="m-0 text-[12px] leading-[1.5] text-text-on-dark">
+              <p className="m-0 text-[14px] leading-[1.5] text-text-on-dark">
                 {contactDetails.phones.join(" / ")}
               </p>
             </div>
 
-            <h3 className="mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase">
+            <h3 className="mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase">
               Email
             </h3>
 
@@ -163,7 +138,7 @@ export function Footer() {
                 <path d="m3 7 9 6 9-6" />
               </svg>
 
-              <p className="m-0 text-[12px] leading-[1.5] text-text-on-dark">
+              <p className="m-0 text-[14px] leading-[1.5] text-text-on-dark">
                 {contactDetails.email}
               </p>
             </div>
@@ -171,7 +146,7 @@ export function Footer() {
 
           {/* SOCIAL + NEWSLETTER */}
           <div className="md:border-l md:border-white/15 md:pl-[30px]">
-            <h3 className="mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase">
+            <h3 className="mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase">
               Follow Us
             </h3>
 
@@ -201,11 +176,11 @@ export function Footer() {
               </a>
             </div>
 
-            <h3 className="mb-3 font-sans text-[11px] font-bold tracking-[0.1em] text-white uppercase">
+            <h3 className="mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase">
               Newsletter
             </h3>
 
-            <p className="mb-3 text-[12px] leading-[1.5] text-text-on-dark">
+            <p className="mb-3 text-[14px] leading-[1.5] text-text-on-dark">
               Stay updated with our latest offers and experiences.
             </p>
 
@@ -238,7 +213,7 @@ export function Footer() {
             </form>
 
             {submitted && (
-              <p role="status" className="mt-1.5 text-[10px] text-gold">
+              <p role="status" className="mt-1.5 text-[14px] text-gold">
                 Thanks — you&rsquo;re subscribed!
               </p>
             )}
@@ -246,7 +221,7 @@ export function Footer() {
         </div>
 
         {/* COPYRIGHT */}
-        <div className="mx-auto mt-7 flex min-h-[38px] max-w-[1280px] flex-col items-start gap-3 border-t border-white/22 pt-3 pb-3.5 font-sans text-[10px] text-text-on-dark-muted sm:flex-row sm:items-center sm:justify-between sm:pb-0">
+        <div className="mx-auto mt-7 flex min-h-[38px] max-w-[1280px] flex-col items-start gap-3 border-t border-white/22 pt-3 pb-3.5 font-sans text-[14px] text-text-on-dark-muted sm:flex-row sm:items-center sm:justify-between sm:pb-0">
           <span>
             © 2025 The Blue Lake, Igatpuri. All Rights Reserved.
           </span>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { rooms } from "../data/content";
 import {
   GuestsIcon,
@@ -15,18 +15,59 @@ export function RoomsSuites() {
     {}
   );
 
-  const changeImage = (roomName: string, direction: number, total: number) => {
+  /*
+   * AUTO IMAGE SLIDER
+   * Changes image every 3 seconds
+   */
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImages((prev) => {
+        const nextImages = { ...prev };
+
+        rooms.slice(0, 4).forEach((room) => {
+          if (!room.images || room.images.length <= 1) return;
+
+          const currentIndex = prev[room.name] ?? 0;
+
+          nextImages[room.name] =
+            (currentIndex + 1) % room.images.length;
+        });
+
+        return nextImages;
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  /*
+   * MANUAL IMAGE CHANGE
+   */
+  const changeImage = (
+    roomName: string,
+    direction: number,
+    total: number
+  ) => {
     setCurrentImages((prev) => {
       const current = prev[roomName] ?? 0;
 
-      const next =
-        (current + direction + total) % total;
+      const next = (current + direction + total) % total;
 
       return {
         ...prev,
         [roomName]: next,
       };
     });
+  };
+
+  /*
+   * GO TO SPECIFIC IMAGE
+   */
+  const goToImage = (roomName: string, index: number) => {
+    setCurrentImages((prev) => ({
+      ...prev,
+      [roomName]: index,
+    }));
   };
 
   return (
@@ -37,11 +78,13 @@ export function RoomsSuites() {
     >
       <div className="mx-auto max-w-[1370px]">
 
-        {/* HEADER */}
+        {/* ================= HEADER ================= */}
         <div className="mb-[38px] flex flex-col items-center text-center">
-          <p className="flex items-center gap-2 text-[9px] font-bold tracking-[0.16em] text-gold uppercase">
+          <p className="flex items-center gap-2 font-bold tracking-[0.16em] text-gold uppercase">
             <span className="block h-px w-[20px] bg-gold" />
+
             Stay in Comfort
+
             <span className="block h-px w-[20px] bg-gold" />
           </p>
 
@@ -52,15 +95,18 @@ export function RoomsSuites() {
             Rooms &amp; Suites
           </h2>
 
-          <p className="mt-[15px] max-w-[480px] text-[11px] leading-[1.65] text-text-muted">
+          <p className="mt-[15px] max-w-[480px]  text-text-muted">
             Spacious, elegant and thoughtfully designed spaces for a relaxing
             stay.
           </p>
         </div>
 
-        {/* ROOM CARDS */}
+        {/* ================= ROOM CARDS ================= */}
         <ul className="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
+
           {rooms.slice(0, 4).map((room) => {
+            const images = room.images ?? [];
+
             const currentIndex = currentImages[room.name] ?? 0;
 
             return (
@@ -68,75 +114,35 @@ export function RoomsSuites() {
                 key={room.name}
                 className="flex min-w-0 flex-col overflow-hidden rounded-[8px] bg-white shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
               >
-                {/* IMAGE SLIDER */}
+
+                {/* ================= IMAGE SLIDER ================= */}
                 <div className="group relative aspect-[1.55/1] overflow-hidden">
 
-                  <img
-                    src={room.images[currentIndex]}
-                    alt={room.name}
-                    className="h-full w-full object-cover transition-all duration-500"
-                  />
-
-                  {/* LEFT ARROW */}
-                  {room.images.length > 1 && (
-                    <button
-                      type="button"
-                      aria-label={`Previous image of ${room.name}`}
-                      onClick={() =>
-                        changeImage(
-                          room.name,
-                          -1,
-                          room.images.length
-                        )
-                      }
-                      className="absolute left-[10px] top-1/2 flex h-[32px] w-[32px] -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
-                    >
-                      <ChevronLeftCircle
-                        aria-hidden="true"
-                        className="h-[18px] w-[18px]"
-                      />
-                    </button>
+                  {images.length > 0 && (
+                    <img
+                      src={images[currentIndex]}
+                      alt={room.name}
+                      className="h-full w-full object-cover transition-all duration-700 ease-in-out"
+                    />
                   )}
 
-                  {/* RIGHT ARROW */}
-                  {room.images.length > 1 && (
-                    <button
-                      type="button"
-                      aria-label={`Next image of ${room.name}`}
-                      onClick={() =>
-                        changeImage(
-                          room.name,
-                          1,
-                          room.images.length
-                        )
-                      }
-                      className="absolute right-[10px] top-1/2 flex h-[32px] w-[32px] -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
-                    >
-                      <ChevronRightCircle
-                        aria-hidden="true"
-                        className="h-[18px] w-[18px]"
-                      />
-                    </button>
-                  )}
+      
 
-                  {/* DOTS */}
-                  {room.images.length > 1 && (
-                    <div className="absolute bottom-[10px] left-1/2 flex -translate-x-1/2 gap-[5px]">
-                      {room.images.map((_, index) => (
+                  {/* ================= DOTS ================= */}
+                  {images.length > 1 && (
+                    <div className="absolute bottom-[10px] left-1/2 flex -translate-x-1/2 items-center gap-[5px]">
+                      {images.map((_, index) => (
                         <button
                           key={index}
                           type="button"
                           aria-label={`Go to image ${index + 1}`}
                           onClick={() =>
-                            setCurrentImages((prev) => ({
-                              ...prev,
-                              [room.name]: index,
-                            }))
+                            goToImage(room.name, index)
                           }
-                          className={`h-[5px] w-[5px] rounded-full transition-all ${
+                          className={`h-[5px] rounded-full transition-all duration-300 ${
                             index === currentIndex
                               ? "w-[14px] bg-white"
-                              : "bg-white/60"
+                              : "w-[5px] bg-white/60"
                           }`}
                         />
                       ))}
@@ -144,45 +150,53 @@ export function RoomsSuites() {
                   )}
                 </div>
 
-                {/* CARD CONTENT */}
+                {/* ================= CARD CONTENT ================= */}
                 <div className="flex flex-1 flex-col px-[19px] pt-[18px] pb-[20px]">
 
-                  <h3 className="text-[12px] font-bold tracking-[0.04em] text-navy-deep uppercase">
+                  {/* ROOM TITLE */}
+                  <h3 className="text-[16px] font-bold leading-[1.3] tracking-[0.04em] text-navy-deep uppercase">
                     {room.name}
                   </h3>
 
-                  <div className="mt-[14px] flex flex-wrap items-center gap-x-[10px] gap-y-2 text-[9.5px] text-text-muted">
+                  {/* ROOM DETAILS */}
+                  <div className="mt-[14px] flex flex-wrap items-center gap-x-[10px] gap-y-2 text-[14px] leading-[1.4] text-text-muted">
 
+                    {/* GUESTS */}
                     <span className="inline-flex items-center gap-[4px] whitespace-nowrap">
                       <GuestsIcon
                         aria-hidden="true"
-                        className="h-[12px] w-[12px] shrink-0 text-navy-deep"
+                        className="h-[14px] w-[14px] shrink-0 text-navy-deep"
                       />
+
                       {room.guests}
                     </span>
 
+                    {/* BED */}
                     <span className="inline-flex items-center gap-[4px]">
                       <BedIcon
                         aria-hidden="true"
-                        className="h-[12px] w-[12px] shrink-0 text-navy-deep"
+                        className="h-[14px] w-[14px] shrink-0 text-navy-deep"
                       />
+
                       {room.beds}
                     </span>
 
+                    {/* VIEW */}
                     <span className="inline-flex items-center gap-[4px] whitespace-nowrap">
                       <PinIcon
                         aria-hidden="true"
-                        className="h-[12px] w-[12px] shrink-0 text-navy-deep"
+                        className="h-[14px] w-[14px] shrink-0 text-navy-deep"
                       />
+
                       {room.view}
                     </span>
 
                   </div>
-
                 </div>
               </li>
             );
           })}
+
         </ul>
       </div>
     </section>

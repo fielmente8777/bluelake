@@ -32,7 +32,7 @@ export function AboutUs() {
               About Us
             </h2>
 
-            <p className="mt-[15px] max-w-[480px] text-[14px] leading-[1.65] text-text-muted">
+            <p className="mt-[15px] max-w-[480px] text-text-muted">
               A Serene Lakeside Escape in Igatpuri
             </p>
           </div>
@@ -55,7 +55,7 @@ export function AboutUs() {
         </div>
 
         {/* Content */}
-        <div className="mt-[20px]  font-sans text-[15px] leading-[1.65] text-text-muted">
+        <div className="mt-[20px]  font-sans text-text-muted">
           <p>
             Nestled amidst the scenic beauty of Igatpuri, The Blue Lake Resort
             is a peaceful retreat designed for guests looking to relax,

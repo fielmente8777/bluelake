@@ -24,18 +24,17 @@ export function ExperiencesStrip() {
 
         {/* LEFT CONTENT */}
         <div>
-          <p className="m-0 flex items-center gap-2 font-sans text-[11px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase">
+          <p className="m-0 flex items-center gap-2 font-sans text-[16px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase">
             Experiences That Stay
           </p>
-
           <h2
             id="experiences-title"
             className="mt-[18px] font-sans text-[34px] leading-[1.1] font-semibold text-white"
           >
             More Than Just a Stay
           </h2>
-
-          <p className="mt-[18px] max-w-[270px] font-sans text-[13px] leading-[1.65] text-text-on-dark-muted">
+          <br></br>
+          <p className="mt-[18px] max-w-[270px] font-sans  text-text-on-dark-muted flex gap-1">
             From adventure to relaxation, explore experiences that connect you
             with nature and create unforgettable memories.
           </p>
