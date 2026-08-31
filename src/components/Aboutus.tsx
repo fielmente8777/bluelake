@@ -86,6 +86,7 @@ export function AboutUs() {
             holiday or a special occasion, The Blue Lake Resort brings together
             nature, comfort and warm hospitality for a refreshing escape from
             the everyday.
+            
           </p>
         </div>
       </div>
