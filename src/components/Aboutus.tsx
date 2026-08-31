@@ -18,7 +18,7 @@ export function AboutUs() {
     <section
       id="about"
       aria-labelledby="about-title"
-      className="bg-white px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
+      className="px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
     >
       <div className="mx-auto max-w-[1370px]">
 

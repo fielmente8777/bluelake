@@ -22,7 +22,7 @@ export function FeatureStrip() {
     <section
       id="about"
       aria-labelledby="feature-strip-title"
-      className="bg-white px-5 pt-[50px] pb-[65px] text-center sm:px-8 lg:px-[52px] flex-col flex gap-2"
+      className=" px-5 pt-[50px] pb-[65px] text-center sm:px-8 lg:px-[52px] flex-col flex gap-2"
     >
       {/* TOP LABEL */}
       <p className="m-0 flex items-center justify-center gap-3 font-sans text font-bold tracking-[0.15em] text-gold uppercase">
