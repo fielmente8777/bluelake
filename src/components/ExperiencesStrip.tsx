@@ -25,7 +25,6 @@ export function ExperiencesStrip() {
         {/* LEFT CONTENT */}
         <div>
           <p className="m-0 flex items-center gap-2 font-sans text-[11px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase">
-            <span className="h-px w-[24px] bg-gold" />
             Experiences That Stay
           </p>
 
@@ -40,13 +39,6 @@ export function ExperiencesStrip() {
             From adventure to relaxation, explore experiences that connect you
             with nature and create unforgettable memories.
           </p>
-
-          <a
-            href="#experiences"
-            className="mt-[28px] inline-flex h-[44px] min-w-[200px] items-center justify-center border border-white/65 bg-transparent font-sans text-[11px] font-bold tracking-[0.07em] !text-white uppercase transition-colors hover:bg-white hover:!text-navy-deep"
-          >
-            Explore Experiences
-          </a>
         </div>
 
         {/* RIGHT CARDS */}
@@ -56,34 +48,22 @@ export function ExperiencesStrip() {
             className="no-scrollbar flex gap-[15px] overflow-x-auto pb-1"
             style={{ scrollSnapType: "x mandatory" }}
           >
-            {experienceCards.map((card) => (
+            {experienceCards.map((card, index) => (
               <li
-                key={card.title}
+                key={card.image || index}
                 style={{ scrollSnapAlign: "start" }}
                 className="relative h-[290px] w-[220px] shrink-0 overflow-hidden rounded-[6px] border border-white/35 bg-charcoal"
               >
-                {/* IMAGE */}
+                {/* IMAGE ONLY */}
                 <img
-                  src={card.alt}
-                  alt={card.title}
+                  src={card.image}
+                  alt=""
+                  aria-hidden="true"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
 
                 {/* DARK GRADIENT */}
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_35%,rgba(0,0,0,0.2)_55%,rgba(0,0,0,0.9)_100%)]" />
-
-                {/* BOTTOM CONTENT */}
-                <div className="absolute right-0 bottom-0 left-0 z-[2] px-[15px] pb-[17px]">
-
-                  <h3 className="font-sans text-[13px] leading-[1.3] font-bold tracking-[0.06em] text-white uppercase">
-                    {card.title}
-                  </h3>
-
-                  <p className="mt-[7px] max-w-[190px] font-sans text-[11px] leading-[1.45] text-white/85">
-                    {card.alt}
-                  </p>
-
-                </div>
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_30%,rgba(0,0,0,0.2)_52%,rgba(0,0,0,0.9)_100%)]" />
               </li>
             ))}
           </ul>

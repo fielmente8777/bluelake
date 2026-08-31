@@ -1,13 +1,14 @@
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
-
 const aboutImages = [
   {
-    alt: "The Blue Lake resort exterior",
+    image: "/images/DJI_0856_11zon.jpg",
+    alt: "The Blue Lake resort aerial view",
   },
   {
+    image: "/images/DJI_0903_11zon.jpg",
     alt: "The Blue Lake resort at night",
   },
   {
+    image: "/images/DJI_0897_11zon.jpg",
     alt: "Lake and mountain view",
   },
 ];
@@ -20,6 +21,7 @@ export function AboutUs() {
       className="bg-white px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
     >
       <div className="mx-auto max-w-[1370px]">
+
         {/* Header */}
         <div className="mb-[38px] flex items-start justify-between">
           <div>
@@ -31,29 +33,8 @@ export function AboutUs() {
             </h2>
 
             <p className="mt-[15px] max-w-[480px] text-[14px] leading-[1.65] text-text-muted">
-              Beyond Stays, We Create Memories.
+              A Serene Lakeside Escape in Igatpuri
             </p>
-          </div>
-
-          {/* Slider Controls */}
-          <div className="flex items-center gap-[6px]">
-            <button
-              type="button"
-              aria-label="Previous image"
-              className="flex h-[24px] w-[24px] items-center justify-center rounded-full bg-[#f1f2f2] text-[11px] text-text-muted"
-            >
-              ‹
-            </button>
-
-            <span className="px-[3px] text-[10px] text-text-muted">1/3</span>
-
-            <button
-              type="button"
-              aria-label="Next image"
-              className="flex h-[24px] w-[24px] items-center justify-center rounded-full border border-[#cfd3d4] bg-white text-[11px] text-navy-deep"
-            >
-              ›
-            </button>
           </div>
         </div>
 
@@ -61,20 +42,20 @@ export function AboutUs() {
         <div className="grid grid-cols-1 gap-[16px] sm:grid-cols-3">
           {aboutImages.map((image) => (
             <div
-              key={image.alt}
-              className="overflow-hidden rounded-[8px] bg-white"
+              key={image.image}
+              className="h-[280px] overflow-hidden rounded-[8px] bg-white"
             >
-              <PhotoPlaceholder alt={image.alt} ratio="1.55 / 1" />
+              <img
+                src={image.image}
+                alt={image.alt}
+                className="h-full w-full object-cover"
+              />
             </div>
           ))}
         </div>
 
         {/* Content */}
-        
-        <div className="mt-[20px] space-y-[12px] text-[15px] leading-[1.55] text-text-muted">
-            <p>
-              A Serene Lakeside Escape in Igatpuri
-            </p>
+        <div className="mt-[20px]  font-sans text-[15px] leading-[1.65] text-text-muted">
           <p>
             Nestled amidst the scenic beauty of Igatpuri, The Blue Lake Resort
             is a peaceful retreat designed for guests looking to relax,
@@ -86,9 +67,9 @@ export function AboutUs() {
             holiday or a special occasion, The Blue Lake Resort brings together
             nature, comfort and warm hospitality for a refreshing escape from
             the everyday.
-            
           </p>
         </div>
+
       </div>
     </section>
   );

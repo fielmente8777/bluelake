@@ -41,61 +41,116 @@ export const featureItems = [
 
 export const rooms = [
   {
-    name: "Deluxe Room",
+    name: "Deluxe Lake View AC",
+    guests: "2 Guests",
+    beds: "1 Queen Bed",
+    view: "Lake View",
+    images: [
+      "/rooms/deluxe.jpg",
+      "/rooms/beddelux.jpg",
+      "/rooms/bathdeluxe.jpg",
+      "/rooms/deleuxelake.jpg",
+      "/rooms/deluxebath.jpg",
+    ],
+  },
+  {
+    name: "Super Deluxe Lake View",
+    guests: "4 Guests",
+    beds: "1 King Bed or 2 Single Beds",
+    view: "Lake View",
+    images: [
+      "/rooms/Superdeluxe.jpg",
+      "/rooms/super/bath.jpg",
+      "/rooms/super/bathr.jpg",
+      "/rooms/super/bed.jpg",
+      "/rooms/super/eac02.jpg",
+      "/rooms/super/s.jpg",
+      "/rooms/super/sup.jpg",
+      "/rooms/super/super.jpg",
+    ],
+  },
+  {
+    name: "Deluxe Garden View AC",
     guests: "2 Guests",
     beds: "1 King Bed",
-    view: "Lake View",
-    description:
-      "Modern comfort with scenic views and all essential amenities.",
-    alt: "Deluxe Room interior with king bed and lake-facing window",
-    image: "/rooms/deluxe.jpg",
-  },
-
-  {
-    name: "Premium Villa",
-    guests: "4 Guests",
-    beds: "2 King Beds",
-    view: "Lake View",
-    description:
-      "Spacious villas with private sit-out, perfect for families.",
-    alt: "Premium Villa with private sit-out and lake view",
-    image: "/rooms/Superdeluxe.jpg",
-  },
-
-  {
-    name: "Executive Suite",
-    guests: "2 Guests",
-    beds: "1 King Bed",
-    view: "Lake View",
-    description:
-      "Luxury suite with separate living area, elevated comfort and views.",
-    alt: "Executive Suite with separate living area",
-    image: "/rooms/deluxegarden.jpg",
-  },
-
-  {
-    name: "Family Suite",
-    guests: "4 Guests",
-    beds: "2 King Beds",
     view: "Garden View",
-    description:
-      "Spacious family suite with a comfortable living area and peaceful garden views.",
-    alt: "Family Suite",
-    image: "/rooms/deleuxelake.jpg",
+    images: [
+      "/rooms/deluxe.jpg",
+      "/rooms/garden/202002111643316554-abe864aadcf511eca6940a58a9feac02.jpg",
+      "/rooms/garden/bed.jpg",
+      "/rooms/deleuxelake.jpg",
+    ],
+  },
+  {
+    name: "Deluxe Lake View AC",
+    guests: "2 Guests",
+    beds: "1 Queen Bed",
+    view: "Lake View",
+    images: [
+      "/rooms/deluxe.jpg",
+      "/rooms/beddelux.jpg",
+      "/rooms/bathdeluxe.jpg",
+      "/rooms/deleuxelake.jpg",
+      "/rooms/deluxebath.jpg",
+    ],
   },
 ];
 export const experienceCards = [
-  { title: "Bonfire Nights", alt: "Guests gathered around a bonfire at night" },
-  { title: "Water Activities", alt: "Kayaking on the lake" },
-  { title: "Nature Trails", alt: "Guests walking a forest nature trail" },
-  { title: "Outdoor Dining", alt: "String-lit outdoor dining setup by the lake" },
+  {
+    // title: "Bonfire Nights",
+    alt: "Guests gathered around a bonfire at night",
+    image: "/images/BLR_EDIITED-51_11zon.jpg",
+  },
+  {
+    // title: "Water Activities",
+    alt: "Kayaking on the lake",
+    image: "/images/BLR_EDIITED-44_11zon.jpg",
+  },
+  {
+    // title: "Nature Trails",
+    alt: "Guests walking a forest nature trail",
+    image: "/images/DJI_0897_11zon.jpg",
+  },
+  {
+    // title: "Outdoor Dining",
+    alt: "String-lit outdoor dining setup by the lake",
+    image: "/images/IMG_8935_11zon.jpg",
+  },
 ];
 
 export const galleryImages = [
-  { alt: "Lakeside lounge seating area at the resort" },
-  { alt: "Aerial view of the resort property amid the hills" },
-  { alt: "Poolside daybeds overlooking the lake" },
-  { alt: "Sunset over the lake" },
+  {
+    image: "/gallery/BLR_EDIITED-63_11zon.jpg",
+    alt: "Lakeside view of The Blue Lake Resort",
+  },
+  {
+    image: "/gallery/DJI_0903_11zon.jpg",
+    alt: "Aerial view of the resort property",
+  },
+  {
+    image: "/gallery/BLR_EDIITED-65_11zon.jpg",
+    alt: "Poolside view at The Blue Lake Resort",
+  },
+  {
+    image: "/gallery/BLR_EDIITED-7_11zon.jpg",
+    alt: "Beautiful resort surroundings",
+  },
+  {
+    image: "/gallery/BLR_EDIITED-18_11zon.jpg",
+    alt: "Lakeside resort experience",
+  },
+  {
+    image: "/gallery/BLR_EDIITED-21_11zon.jpg",
+    alt: "Resort outdoor area",
+  },
+  {
+    image: "/gallery/BLR_EDIITED-48_11zon.jpg",
+    alt: "The Blue Lake Resort view",
+  },
+  {
+    image: "/gallery/BLR_EDIITED-53_11zon.jpg",
+    alt: "Sunset view at The Blue Lake Resort",
+  },
 ];
 
 export const contactDetails = {

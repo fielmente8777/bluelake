@@ -1,5 +1,4 @@
 import { galleryImages } from "../data/content";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
 
 export function Gallery() {
   return (
@@ -10,7 +9,7 @@ export function Gallery() {
     >
       <div className="mx-auto max-w-[1370px]">
 
-        {/* Centered Header */}
+        {/* Header */}
         <div className="mb-[38px] flex flex-col items-center text-center">
           <p className="flex items-center gap-2 text-[9px] font-bold tracking-[0.16em] text-gold uppercase">
             <span className="block h-px w-[20px] bg-gold" />
@@ -28,20 +27,20 @@ export function Gallery() {
           <p className="mt-[15px] max-w-[480px] text-[11px] leading-[1.65] text-text-muted">
             See the beauty, feel the calm.
           </p>
-
-          <a
-            href="#gallery-full"
-            className="mt-[20px] inline-flex h-[41px] min-w-[176px] items-center justify-center bg-navy-deep px-[22px] text-[10px] font-bold tracking-[0.06em] !text-white uppercase"
-          >
-            View Full Gallery
-          </a>
         </div>
 
         {/* Gallery Images */}
-        <ul className="grid grid-cols-4 gap-[9px]">
+        <ul className="grid grid-cols-1 gap-[9px] sm:grid-cols-2 lg:grid-cols-4">
           {galleryImages.map((img) => (
-            <li key={img.alt} className="h-[216px] overflow-hidden rounded-[7px] bg-white">
-              <PhotoPlaceholder alt={img.alt} ratio="3 / 4" />
+            <li
+              key={img.image}
+              className="h-[216px] overflow-hidden rounded-[7px] bg-white"
+            >
+              <img
+                src={img.image}
+                alt={img.alt}
+                className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+              />
             </li>
           ))}
         </ul>
