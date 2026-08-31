@@ -57,7 +57,7 @@ export function Footer() {
               href="#about-ante-meridiem"
               className="mt-5 inline-flex items-center bg-white px-6 py-3.5 text-[11px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100"
             >
-              Learn More About Us
+              Book Now
             </a>
           </div>
 

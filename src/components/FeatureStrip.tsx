@@ -22,30 +22,30 @@ export function FeatureStrip() {
     <section
       id="about"
       aria-labelledby="feature-strip-title"
-      className="bg-white px-5 pt-[34px] pb-[58px] text-center sm:px-8"
+      className="bg-white px-5 pt-[42px] pb-[65px] text-center sm:px-8 lg:px-[52px]"
     >
       {/* TOP LABEL */}
-      <p className="m-0 flex items-center justify-center gap-2 text-[9px] leading-none font-bold tracking-[0.14em] text-gold uppercase">
-        <span className="h-px w-5 bg-gold" />
+      <p className="m-0 flex items-center justify-center gap-3 font-sans text-[10px] leading-none font-bold tracking-[0.16em] text-gold uppercase">
+        <span className="h-px w-[24px] bg-gold" />
         The Blue Lake Experience
-        <span className="h-px w-5 bg-gold" />
+        <span className="h-px w-[24px] bg-gold" />
       </p>
 
       {/* HEADING */}
       <h2
         id="feature-strip-title"
-        className="mt-[15px] font-display text-[32px] leading-[1.1] font-medium text-navy-deep sm:text-[34px]"
+        className="mt-[16px] font-sans text-[34px] leading-[1.1] font-semibold text-navy-deep"
       >
         Nature. Comfort. Connection.
       </h2>
 
       {/* SUBTITLE */}
-      <p className="mt-[9px] text-[12px] leading-[1.4] text-text-muted">
+      <p className="mt-[10px] font-sans text-[13px] leading-[1.5] text-text-muted">
         Everything you need for a perfect escape.
       </p>
 
       {/* FEATURES */}
-      <ul className="mt-[42px] grid w-full grid-cols-6">
+      <ul className="mt-[55px] grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
         {featureItems.map((item, i) => {
           const Icon = iconMap[item.icon as keyof typeof iconMap];
 
@@ -55,23 +55,23 @@ export function FeatureStrip() {
               className={`
                 relative
                 flex
-                min-h-[170px]
+                min-h-[185px]
                 flex-col
                 items-center
-                px-[10px]
+                px-[18px]
                 text-center
 
                 ${i !== featureItems.length - 1
-                  ? "border-r border-[rgba(11,37,69,0.10)]"
+                  ? "border-b border-[rgba(11,37,69,0.10)] sm:border-b-0 sm:border-r"
                   : ""}
               `}
             >
               {/* ICON */}
-              <div className="flex h-[58px] w-[58px] shrink-0 items-center justify-center">
+              <div className="flex h-[68px] w-[68px] shrink-0 items-center justify-center">
                 {Icon && (
                   <Icon
                     aria-hidden="true"
-                    className="h-[50px] w-[50px] text-navy-deep"
+                    className="h-[58px] w-[58px] text-navy-deep"
                   />
                 )}
               </div>
@@ -79,15 +79,14 @@ export function FeatureStrip() {
               {/* TITLE */}
               <h3
                 className="
-                  mt-[13px]
-                  h-[24px]
+                  mt-[16px]
+                  min-h-[24px]
                   w-full
-                  text-center
-                  font-body
-                  text-[10px]
-                  leading-[1.2]
+                  font-sans
+                  text-[11px]
+                  leading-[1.25]
                   font-bold
-                  tracking-[0.06em]
+                  tracking-[0.07em]
                   text-navy-deep
                   uppercase
                 "
@@ -98,11 +97,11 @@ export function FeatureStrip() {
               {/* DESCRIPTION */}
               <p
                 className="
-                  mt-[8px]
-                  min-h-[52px]
-                  max-w-[150px]
-                  text-center
-                  text-[11px]
+                  mt-[9px]
+                  min-h-[55px]
+                  max-w-[165px]
+                  font-sans
+                  text-[12px]
                   leading-[1.55]
                   text-text-muted
                 "

@@ -10,31 +10,21 @@ export function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between gap-6 bg-white/95 px-5 py-[18px] backdrop-blur-[6px] sm:px-8 lg:px-14">
       <a
-        href="#home"
-        aria-label="The Blue Lake, Igatpuri — home"
-        className="flex shrink-0 items-center gap-2.5"
-      >
-        <span
-          aria-hidden="true"
-          className="flex h-[34px] w-[34px] items-center justify-center rounded-full border-[1.5px] border-navy-deep text-navy-deep"
-        >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-[18px] w-[18px]">
-            <path d="M12 3l6 10H6l6-10z" />
-            <path d="M3 18c1.5-1.4 3-1.4 4.5 0s3 1.4 4.5 0 3-1.4 4.5 0 3 1.4 4.5 0" />
-          </svg>
-        </span>
-        <span className="flex flex-col leading-[1.1]">
-          <strong className="font-display text-[15px] tracking-[0.03em] text-navy-deep">
-            The Blue Lake
-          </strong>
-          <small className="text-[9px] tracking-[0.06em] text-text-muted">IGATPURI</small>
-        </span>
-      </a>
+  href="#home"
+  aria-label="The Blue Lake, Igatpuri — home"
+  className="flex shrink-0 items-center"
+>
+  <img
+    src="/images/logo.png"
+    alt="The Blue Lake Igatpuri"
+    className="h-[52px] w-auto object-contain"
+  />
+</a>
 
-      <span className="hidden lg:block ml-1 border-l border-border pl-4 text-[9px] leading-[1.5] tracking-[0.04em] text-text-muted">
+      {/* <span className="hidden lg:block ml-1 border-l border-border pl-4 text-[9px] leading-[1.5] tracking-[0.04em] text-text-muted">
         managed by
         <strong className="block text-[10px] text-navy-deep">Ante Meridiem Hotels &amp; Resorts</strong>
-      </span>
+      </span> */}
 
       <nav
         aria-label="Primary"

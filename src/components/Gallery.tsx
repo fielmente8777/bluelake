@@ -6,30 +6,38 @@ export function Gallery() {
     <section
       id="gallery"
       aria-labelledby="gallery-title"
-      className="bg-off-white px-5 pt-[42px] pb-10 sm:px-9 lg:px-12"
+      className="bg-off-white px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
     >
-      <div className="mx-auto grid max-w-[1180px] grid-cols-1 items-center gap-12 md:grid-cols-[285px_1fr]">
-        <div>
-          <p className="m-0 flex items-center gap-2 text-[10px] leading-[1.2] font-bold tracking-[0.12em] text-gold uppercase before:block before:h-px before:w-5 before:bg-gold">
+      <div className="mx-auto max-w-[1370px]">
+
+        {/* Centered Header */}
+        <div className="mb-[38px] flex flex-col items-center text-center">
+          <p className="flex items-center gap-2 text-[9px] font-bold tracking-[0.16em] text-gold uppercase">
+            <span className="block h-px w-[20px] bg-gold" />
             Gallery
+            <span className="block h-px w-[20px] bg-gold" />
           </p>
+
           <h2
             id="gallery-title"
-            className="mt-5 font-display text-[clamp(28px,3vw,34px)] leading-[1.05] font-medium text-navy-deep"
+            className="mt-[12px] font-display text-[34px] leading-none font-medium text-navy-deep"
           >
             A Glimpse of Paradise
           </h2>
-          <p className="mt-4 text-xs leading-[1.5] text-text-muted">
+
+          <p className="mt-[15px] max-w-[480px] text-[11px] leading-[1.65] text-text-muted">
             See the beauty, feel the calm.
           </p>
+
           <a
             href="#gallery-full"
-            className="mt-6 inline-flex h-[41px] min-w-[176px] items-center justify-center bg-navy-deep text-[10px] font-bold tracking-[0.06em] !text-white uppercase"
+            className="mt-[20px] inline-flex h-[41px] min-w-[176px] items-center justify-center bg-navy-deep px-[22px] text-[10px] font-bold tracking-[0.06em] !text-white uppercase"
           >
             View Full Gallery
           </a>
         </div>
 
+        {/* Gallery Images */}
         <ul className="grid grid-cols-4 gap-[9px]">
           {galleryImages.map((img) => (
             <li key={img.alt} className="h-[216px] overflow-hidden rounded-[7px] bg-white">
@@ -37,6 +45,7 @@ export function Gallery() {
             </li>
           ))}
         </ul>
+
       </div>
     </section>
   );

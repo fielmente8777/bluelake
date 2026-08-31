@@ -84,10 +84,10 @@ export function Hero({
   }
 
   return (
-    <section id="home" className="relative bg-navy-deep">
+    <section>
       <div className="relative">
         <PhotoPlaceholder
-          src={photoSrc}
+          src="/images/DJI_0856_11zon.jpg"
           alt="Aerial view of The Blue Lake resort at dusk, buildings lit along the lakeshore surrounded by mountains"
           ratio="21 / 9"
           className="!aspect-auto h-[620px] md:h-[668px]"
@@ -105,9 +105,8 @@ export function Hero({
             A serene lakeside resort in Murambi, Igatpuri, where nature&rsquo;s
             calm meets refined comfort.
           </p>
-          <span className="mt-5 block h-0.5 w-[42px] bg-white/50" />
           <div className="mt-[26px] flex flex-wrap gap-3.5">
-            <a
+            {/* <a
               href="#book"
               className="border border-white/50 bg-navy-deep px-6 py-3.5 text-[11px] font-bold tracking-[0.08em] text-white uppercase transition-colors hover:bg-navy-darker"
             >
@@ -118,7 +117,7 @@ export function Hero({
               className="border border-white/60 bg-transparent px-6 py-3.5 text-[11px] font-bold tracking-[0.08em] text-white uppercase transition-colors hover:bg-white/10"
             >
               Explore Resort
-            </a>
+            </a> */}
           </div>
         </div>
 

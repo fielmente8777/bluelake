@@ -1,11 +1,8 @@
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
-  { label: "Stay", href: "#stay", hasDropdown: true },
-  { label: "Experiences", href: "#experiences" },
+  { label: "Rooms", href: "#rooms" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Events", href: "#events" },
-  { label: "Offers", href: "#offers" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -48,27 +45,45 @@ export const rooms = [
     guests: "2 Guests",
     beds: "1 King Bed",
     view: "Lake View",
-    description: "Modern comfort with scenic views and all essential amenities.",
+    description:
+      "Modern comfort with scenic views and all essential amenities.",
     alt: "Deluxe Room interior with king bed and lake-facing window",
+    image: "/rooms/deluxe.jpg",
   },
+
   {
     name: "Premium Villa",
     guests: "4 Guests",
     beds: "2 King Beds",
     view: "Lake View",
-    description: "Spacious villas with private sit-out, perfect for families.",
+    description:
+      "Spacious villas with private sit-out, perfect for families.",
     alt: "Premium Villa with private sit-out and lake view",
+    image: "/rooms/Superdeluxe.jpg",
   },
+
   {
     name: "Executive Suite",
     guests: "2 Guests",
     beds: "1 King Bed",
     view: "Lake View",
-    description: "Luxury suite with separate living area, elevated comfort and views.",
+    description:
+      "Luxury suite with separate living area, elevated comfort and views.",
     alt: "Executive Suite with separate living area",
+    image: "/rooms/deluxegarden.jpg",
+  },
+
+  {
+    name: "Family Suite",
+    guests: "4 Guests",
+    beds: "2 King Beds",
+    view: "Garden View",
+    description:
+      "Spacious family suite with a comfortable living area and peaceful garden views.",
+    alt: "Family Suite",
+    image: "/rooms/deleuxelake.jpg",
   },
 ];
-
 export const experienceCards = [
   { title: "Bonfire Nights", alt: "Guests gathered around a bonfire at night" },
   { title: "Water Activities", alt: "Kayaking on the lake" },

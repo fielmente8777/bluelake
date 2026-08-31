@@ -1,27 +1,49 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* =========================
+     COLORS
+     ========================= */
+
   --color-navy-deep: #0b2545;
   --color-navy-darker: #081b36;
   --color-navy-text: #13294b;
+
   --color-cream: #f4f1ea;
   --color-cream-alt: #f7f5f0;
+
   --color-charcoal: #1e2a38;
   --color-charcoal-alt: #16202b;
+
   --color-gold: #c79a46;
+
   --color-off-white: #f8f7f4;
+
   --color-text-muted: #5b6572;
   --color-text-on-dark: #e8e6df;
   --color-text-on-dark-muted: #a8afb8;
+
   --color-border: #e4e1d8;
   --color-border-dark: #2b3644;
 
-  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* =========================
+     FONTS
+     ========================= */
+
+  --font-display: ui-sans-serif, system-ui, sans-serif;
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+
+  /* =========================
+     SHADOWS
+     ========================= */
 
   --shadow-card: 0 4px 24px rgba(11, 37, 69, 0.08);
   --shadow-float: 0 12px 40px rgba(11, 37, 69, 0.16);
 }
+
+/* =========================
+   BOX SIZING
+   ========================= */
 
 *,
 *::before,
@@ -29,18 +51,31 @@
   box-sizing: border-box;
 }
 
+/* =========================
+   HTML
+   ========================= */
+
 html {
   scroll-behavior: smooth;
 }
 
+/* =========================
+   BODY
+   ========================= */
+
 body {
   margin: 0;
-  font-family: var(--font-body);
+  font-family: ui-sans-serif, system-ui, sans-serif;
   color: var(--color-navy-text);
   background: var(--color-off-white);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* =========================
+   HEADINGS
+   ========================= */
 
 h1,
 h2,
@@ -49,53 +84,99 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
 }
 
+/* =========================
+   PARAGRAPHS
+   ========================= */
+
 p {
   margin: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
 }
+
+/* =========================
+   LINKS
+   ========================= */
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: ui-sans-serif, system-ui, sans-serif;
 }
 
+/* =========================
+   BUTTONS
+   ========================= */
+
 button {
-  font-family: inherit;
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
   cursor: pointer;
 }
+
+/* =========================
+   FORM ELEMENTS
+   ========================= */
+
+input,
+textarea,
+select {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* =========================
+   IMAGES
+   ========================= */
 
 img {
   max-width: 100%;
   display: block;
 }
 
-ul {
+/* =========================
+   LISTS
+   ========================= */
+
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* Visible keyboard focus for accessibility, per WCAG 2.4.7 */
+/* =========================
+   FOCUS
+   ========================= */
+
 :focus-visible {
   outline: 2px solid var(--color-gold);
   outline-offset: 2px;
 }
 
-/* Hide scrollbar on the horizontal experiences carousel */
+/* =========================
+   HORIZONTAL SCROLLBAR
+   ========================= */
+
 .no-scrollbar {
   scrollbar-width: none;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* =========================
+   REDUCED MOTION
+   ========================= */
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
