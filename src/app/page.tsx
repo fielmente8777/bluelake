@@ -13,8 +13,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <FeatureStrip />
         <AboutUs />
+        <FeatureStrip />
         <RoomsSuites />
         <ExperiencesStrip />
         <Gallery />
