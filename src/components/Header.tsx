@@ -39,7 +39,6 @@ export function Header() {
             }`}
           >
             {link.label}
-            {link.hasDropdown && <ChevronDown aria-hidden="true" />}
           </a>
         ))}
       </nav>

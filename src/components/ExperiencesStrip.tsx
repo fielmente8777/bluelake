@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import { experienceCards } from "../data/content";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
 import { ChevronLeftCircle, ChevronRightCircle } from "./icons";
 
 export function ExperiencesStrip() {
@@ -25,7 +24,8 @@ export function ExperiencesStrip() {
 
         {/* LEFT CONTENT */}
         <div>
-          <p className="m-0 flex items-center gap-2 font-sans text-[11px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase before:block before:h-px before:w-[24px] before:bg-gold">
+          <p className="m-0 flex items-center gap-2 font-sans text-[11px] leading-[1.2] font-bold tracking-[0.14em] text-gold uppercase">
+            <span className="h-px w-[24px] bg-gold" />
             Experiences That Stay
           </p>
 
@@ -63,30 +63,26 @@ export function ExperiencesStrip() {
                 className="relative h-[290px] w-[220px] shrink-0 overflow-hidden rounded-[6px] border border-white/35 bg-charcoal"
               >
                 {/* IMAGE */}
-                <div className="absolute inset-0">
-                  <PhotoPlaceholder
-                    alt={card.alt}
-                    ratio="3 / 4"
-                  />
-                </div>
+                <img
+                  src={card.alt}
+                  alt={card.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
 
                 {/* DARK GRADIENT */}
-                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_42%,rgba(0,0,0,0.15)_58%,rgba(0,0,0,0.88)_100%)]" />
+                <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_35%,rgba(0,0,0,0.2)_55%,rgba(0,0,0,0.9)_100%)]" />
 
-                {/* CARD CONTENT - BOTTOM */}
+                {/* BOTTOM CONTENT */}
                 <div className="absolute right-0 bottom-0 left-0 z-[2] px-[15px] pb-[17px]">
 
-                  {/* TITLE */}
-                  <div className="flex items-center gap-[8px] font-sans text-[12px] leading-[1.3] font-bold tracking-[0.06em] text-white uppercase">
+                  <h3 className="font-sans text-[13px] leading-[1.3] font-bold tracking-[0.06em] text-white uppercase">
                     {card.title}
-                  </div>
+                  </h3>
 
-                  {/* DESCRIPTION */}
-                  {card.description && (
-                    <p className="mt-[7px] max-w-[190px] font-sans text-[11px] leading-[1.45] text-white/85">
-                      {card.description}
-                    </p>
-                  )}
+                  <p className="mt-[7px] max-w-[190px] font-sans text-[11px] leading-[1.45] text-white/85">
+                    {card.alt}
+                  </p>
+
                 </div>
               </li>
             ))}
