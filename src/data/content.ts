@@ -170,7 +170,7 @@ export const galleryImages = [
 ];
 
 export const contactDetails = {
-  address: "Murambi, Igatpuri – 422403, Maharashtra, India",
+  address:"Murambi, Gate no. 858 Wadiwarhe-Ahurli, Road, Igatpuri, Maharashtra 422010",
   phones: ["+91 80-65072001", "+91 8554-929929"],
   email: ["sales@amhotels.in",
      "info@amhotels.in"],

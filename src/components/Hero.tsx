@@ -195,7 +195,7 @@ export function Hero({
 
           {/* PHONE */}
           <a
-            href={`tel:${phoneNumber}`}
+            href="tel:+918065072001"
             aria-label="Call resort"
             className="
               flex
@@ -214,7 +214,7 @@ export function Hero({
 
           {/* LOCATION */}
           <a
-            href={mapsUrl}
+            href="https://maps.app.goo.gl/yjjb6rpRNq4cHvTH6"
             target="_blank"
             rel="noreferrer"
             aria-label="View on map"

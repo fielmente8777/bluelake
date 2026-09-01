@@ -9,7 +9,6 @@ import {
   PhoneIcon,
   PinIcon,
   SendIcon,
-  YoutubeIcon,
 } from "./icons";
 
 export function Footer() {
@@ -29,46 +28,51 @@ export function Footer() {
     <>
       {/* ================= MANAGED BY BANNER ================= */}
       <section
-        aria-labelledby="managed-title"
-        className="relative h-[275px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[290px] lg:h-[310px]"
+  aria-labelledby="managed-title"
+  className="relative h-[330px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[345px] lg:h-[350px]"
+>
+  <PhotoPlaceholder
+    src="/images/BLR_EDIITED-24_11zon.jpg"
+    alt="Ante Meridiem Hotels & Resorts exterior"
+    ratio="21 / 8"
+    className="absolute inset-0 h-full !aspect-auto"
+  />
+
+  <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
+
+  <div className="absolute inset-0 flex items-start px-5 pt-[40px] sm:px-8 lg:px-[7.5%]">
+    <div className="max-w-[520px]">
+
+      {/* MANAGED BY */}
+      <p className="m-0 text-[16px] font-bold tracking-[0.08em] text-white uppercase">
+        Managed By
+      </p>
+
+      {/* TITLE */}
+      <h2
+        id="managed-title"
+        className="mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white"
       >
-        <PhotoPlaceholder
-          src="/images/BLR_EDIITED-24_11zon.jpg"
-          alt="Ante Meridiem Hotels & Resorts exterior"
-          ratio="21 / 8"
-          className="absolute inset-0 h-full !aspect-[21/8]"
-        />
+        Ante Meridiem Hotels &amp; Resorts
+      </h2>
 
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
+      {/* DESCRIPTION */}
+      <p className="mt-[28px] max-w-[520px] text-[18px] leading-[1.65] text-white">
+        With a commitment to excellence, we bring world-class hospitality,
+        operational expertise and a passion for creating memorable stays.
+      </p>
 
-        <div className="absolute inset-0 flex items-start px-5 pt-[40px] sm:px-8 lg:px-[7.5%] flex gap-2">
-          <div className="max-w-[440px]">
-            <p className="py-2 text-[16px] font-bold tracking-[0.14em] text-text-on-dark uppercase">
-              Managed By
-            </p>
+      {/* BOOK NOW */}
+      <a
+        href="#about-ante-meridiem"
+        className="mt-[24px] inline-flex items-center bg-white px-7 py-4 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100"
+      >
+        Book Now
+      </a>
 
-            <h2
-              id="managed-title"
-              className="mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white flex gap-2"
-            >
-              Ante Meridiem Hotels &amp; Resorts
-            </h2>
-            <br></br>
-
-            <p className="mt-3.5 text-text-on-dark">
-              With a commitment to excellence, we bring world-class hospitality,
-              operational expertise and a passion for creating memorable stays.
-            </p>
-
-            <a
-              href="#about-ante-meridiem"
-              className="mt-5 inline-flex items-center bg-white px-6 py-3.5 text-[11px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100"
-            >
-              Book Now
-            </a>
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
 
       {/* ================= FOOTER ================= */}
       <footer
@@ -78,7 +82,7 @@ export function Footer() {
         <div className="mx-auto max-w-[1280px]">
           {/* ================= LET'S CONNECT ================= */}
           <div className="mb-[32px] flex items-center justify-center">
-            <p className="m-0 flex items-center justify-center gap-2.5 text-[16px] font-bold tracking-[0.12em] text-white uppercase">
+            <p className="m-0 flex items-center justify-center gap-2.5 text-[16px] font-bold text-white uppercase">
               <span className="h-px w-[24px] bg-white/60" />
               Let&rsquo;s Connect
               <span className="h-px w-[24px] bg-white/60" />
@@ -164,7 +168,7 @@ export function Footer() {
 
               <div className="py-3 flex gap-2.5">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/thebluelakeresort?igsi=MTg1MDBiNW9pZTJkZQ=="
                   aria-label="Instagram"
                   className="flex h-[32px] w-[32px] items-center justify-center rounded-full border border-white/40 text-white transition-colors hover:bg-white/10 [&>svg]:h-[16px] [&>svg]:w-[16px]"
                 >
@@ -172,19 +176,11 @@ export function Footer() {
                 </a>
 
                 <a
-                  href="#"
+                  href="https://www.facebook.com/thebluelakeresort/"
                   aria-label="Facebook"
                   className="flex h-[32px] w-[32px] items-center justify-center rounded-full border border-white/40 text-white transition-colors hover:bg-white/10 [&>svg]:h-[16px] [&>svg]:w-[16px]"
                 >
                   <FacebookIcon aria-hidden="true" />
-                </a>
-
-                <a
-                  href="#"
-                  aria-label="YouTube"
-                  className="flex h-[32px] w-[32px] items-center justify-center rounded-full border border-white/40 text-white transition-colors hover:bg-white/10 [&>svg]:h-[16px] [&>svg]:w-[16px]"
-                >
-                  <YoutubeIcon aria-hidden="true" />
                 </a>
               </div>
 
