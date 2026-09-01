@@ -235,7 +235,7 @@ export function Footer() {
             <div className="flex flex-wrap gap-6">
               <a href="#privacy">Privacy Policy</a>
               <a href="#terms">Terms &amp; Conditions</a>
-              <a href="#credit">Powered by Filemente</a>
+              <a href="#credit">Powered by Fielmente</a>
             </div>
           </div>
         </div>
