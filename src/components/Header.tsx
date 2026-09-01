@@ -17,7 +17,7 @@ export function Header() {
   <img
     src="/images/logo.png"
     alt="The Blue Lake Igatpuri"
-    className="h-[52px] w-auto object-contain"
+    className="h-[55px] w-auto object-contain"
   />
 </a>
 

@@ -22,40 +22,40 @@ export function AboutUs() {
     >
       <div className="mx-auto max-w-[1370px]">
 
-        {/* Header */}
-        <div className="mb-[38px] flex items-start justify-between">
-          <div>
-            <h2
-              id="about-title"
-              className="font-serif text-[34px] leading-none text-navy-deep"
-            >
-              About Us
-            </h2>
+        {/* HEADER */}
+        <div className="mb-[38px] flex flex-col items-center text-center">
+          <p className="m-0 flex items-center justify-center gap-3 font-sans text-[24px] font-bold tracking-[0.15em] text-gold uppercase">
+            <span className="h-px w-[24px]  bg-gold" />
+            About Us
+            <span className="h-px w-[24px] bg-gold" />
+          </p>
 
-            <p className="mt-[15px] max-w-[480px] text-text-muted">
-              A Serene Lakeside Escape in Igatpuri
-            </p>
-          </div>
+          <h2
+            id="about-title"
+            className="mt-[40px] max-w-[900px] font-sans text-[40px] leading-[1.15] font-semibold text-navy-deep"
+          >
+            A Serene Lakeside Escape in Igatpuri
+          </h2>
         </div>
 
-        {/* Images */}
+        {/* IMAGES */}
         <div className="grid grid-cols-1 gap-[16px] sm:grid-cols-3">
-          {aboutImages.map((image) => (
+          {aboutImages.map((item) => (
             <div
-              key={image.image}
+              key={item.image}
               className="h-[280px] overflow-hidden rounded-[8px] bg-white"
             >
               <img
-                src={image.image}
-                alt={image.alt}
-                className="h-full w-full object-cover"
+                src={item.image}
+                alt={item.alt}
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
           ))}
         </div>
 
-        {/* Content */}
-        <div className="mt-[20px]  font-sans text-text-muted">
+        {/* CONTENT */}
+        <div className="mt-[20px] font-sans leading-[1.7] text-text-muted">
           <p>
             Nestled amidst the scenic beauty of Igatpuri, The Blue Lake Resort
             is a peaceful retreat designed for guests looking to relax,

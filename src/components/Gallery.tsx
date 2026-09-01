@@ -10,8 +10,8 @@ export function Gallery() {
       <div className="mx-auto max-w-[1370px]">
 
         {/* Header */}
-        <div className="mb-[38px] flex flex-col items-center text-center">
-          <p className="flex items-center gap-2 font-bold tracking-[0.16em] text-gold uppercase">
+        <div className="mb-[38px] flex flex-col items-center text-cente flex gap-2">
+          <p className="flex items-center gap-2 font-sans text-[24px] font-bold tracking-[0.16em] text-gold uppercase">
             <span className="block h-px w-[20px] bg-gold" />
             Gallery
             <span className="block h-px w-[20px] bg-gold" />
@@ -19,12 +19,12 @@ export function Gallery() {
 
           <h2
             id="gallery-title"
-            className="mt-[12px] font-display text-[34px] leading-none font-medium text-navy-deep"
+            className="mt-[12px] font-display text-[40px] leading-none font-medium text-navy-deep"
           >
             A Glimpse of Paradise
           </h2>
 
-          <p className="mt-[15px] max-w-[480px] text-text-muted">
+          <p className="mt-[15px] font-sans text-[16px] text-text-muted">
             See the beauty, feel the calm.
           </p>
         </div>

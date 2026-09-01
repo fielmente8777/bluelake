@@ -32,11 +32,6 @@ export const featureItems = [
     title: "Events & Celebrations",
     description: "Perfect for weddings, corporate retreats & special occasions.",
   },
-  {
-    icon: "expert",
-    title: "Managed by Experts",
-    description: "Delivering world-class hospitality with Ante Meridiem Hotels & Resorts.",
-  },
 ] as const;
 
 export const rooms = [
@@ -126,6 +121,16 @@ export const experienceCards = [
     alt: "String-lit outdoor dining setup by the lake",
     image: "/images/DJI_0908_11zon.jpg",
   },
+  {
+    // title: "Nature Trails",
+    alt: "Guests walking a forest nature trail",
+    image: "/gallery/BLR_EDIITED-65_11zon.jpg",
+  },
+  {
+    // title: "Outdoor Dining",
+    alt: "String-lit outdoor dining setup by the lake",
+    image: "/rooms/super/s.jpg",
+  },
 ];
 
 export const galleryImages = [
@@ -166,6 +171,7 @@ export const galleryImages = [
 
 export const contactDetails = {
   address: "Murambi, Igatpuri – 422403, Maharashtra, India",
-  phones: ["+91 91565 55504", "91565 55505"],
-  email: "reservations@thebluelakeigatpuri.com",
+  phones: ["+91 80-65072001", "+91 8554-929929"],
+  email: ["sales@amhotels.in",
+     "info@amhotels.in"],
 };
