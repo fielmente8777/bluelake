@@ -10,6 +10,7 @@ import {
   PinIcon,
   SendIcon,
 } from "./icons";
+import Link from "next/link";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -28,51 +29,49 @@ export function Footer() {
     <>
       {/* ================= MANAGED BY BANNER ================= */}
       <section
-  aria-labelledby="managed-title"
-  className="relative h-[330px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[345px] lg:h-[350px]"
->
-  <PhotoPlaceholder
-    src="/images/BLR_EDIITED-24_11zon.jpg"
-    alt="Ante Meridiem Hotels & Resorts exterior"
-    ratio="21 / 8"
-    className="absolute inset-0 h-full !aspect-auto"
-  />
-
-  <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
-
-  <div className="absolute inset-0 flex items-start px-5 pt-[40px] sm:px-8 lg:px-[7.5%]">
-    <div className="max-w-[520px]">
-
-      {/* MANAGED BY */}
-      <p className="m-0 text-[16px] font-bold tracking-[0.08em] text-white uppercase">
-        Managed By
-      </p>
-
-      {/* TITLE */}
-      <h2
-        id="managed-title"
-        className="mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white"
+        aria-labelledby="managed-title"
+        className="relative h-[330px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[345px] lg:h-[350px]"
       >
-        Ante Meridiem Hotels &amp; Resorts
-      </h2>
+        <PhotoPlaceholder
+          src="/images/BLR_EDIITED-24_11zon.jpg"
+          alt="Ante Meridiem Hotels & Resorts exterior"
+          ratio="21 / 8"
+          className="absolute inset-0 h-full !aspect-auto"
+        />
 
-      {/* DESCRIPTION */}
-      <p className="mt-[28px] max-w-[520px] text-[18px] leading-[1.65] text-white">
-        With a commitment to excellence, we bring world-class hospitality,
-        operational expertise and a passion for creating memorable stays.
-      </p>
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
 
-      {/* BOOK NOW */}
-      <a
-        href="#about-ante-meridiem"
-        className="mt-[24px] inline-flex items-center bg-white px-7 py-4 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100"
-      >
-        Book Now
-      </a>
+        <div className="absolute inset-0 flex items-start px-5 pt-[40px] sm:px-8 lg:px-[7.5%]">
+          <div className="max-w-[520px]">
+            {/* MANAGED BY */}
+            <p className="m-0 text-[16px] font-bold tracking-[0.08em] text-white uppercase">
+              Managed By
+            </p>
 
-    </div>
-  </div>
-</section>
+            {/* TITLE */}
+            <h2
+              id="managed-title"
+              className="mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white"
+            >
+              Ante Meridiem Hotels &amp; Resorts
+            </h2>
+
+            {/* DESCRIPTION */}
+            <p className="mt-[28px] max-w-[520px] text-[18px] leading-[1.65] text-white">
+              With a commitment to excellence, we bring world-class hospitality,
+              operational expertise and a passion for creating memorable stays.
+            </p>
+
+            {/* BOOK NOW */}
+            <a
+              href="#about-ante-meridiem"
+              className="mt-[24px] inline-flex items-center bg-white px-7 py-4 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100"
+            >
+              Book Now
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* ================= FOOTER ================= */}
       <footer
@@ -233,9 +232,30 @@ export function Footer() {
             <span>© 2025 The Blue Lake, Igatpuri. All Rights Reserved.</span>
 
             <div className="flex flex-wrap gap-6">
-              <a href="#privacy">Privacy Policy</a>
-              <a href="#terms">Terms &amp; Conditions</a>
-              <a href="#credit">Powered by Fielmente</a>
+              <Link
+                href="/privacy-policy"
+                className="transition-colors hover:text-white"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/cancellation-policy"
+                className="transition-colors hover:text-white"
+              >
+                Cancellation Policy
+              </Link>
+              <Link
+                href="/in-house-guest-policy"
+                className="transition-colors hover:text-white"
+              >
+                In House Guest Policy
+              </Link>
+              <Link
+                href="/credit"
+                className="transition-colors hover:text-white"
+              >
+                Powered by Fielmente
+              </Link>
             </div>
           </div>
         </div>
