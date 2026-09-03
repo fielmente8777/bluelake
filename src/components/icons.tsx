@@ -186,3 +186,18 @@ export const SendIcon = (p: SVGProps<SVGSVGElement>) => (
     <path d="M22 2l-7 20-4-9-9-4 20-7z" />
   </svg>
 );
+
+export const BathroomIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} width={16} height={16} {...p}>
+    <rect x="3" y="3" width="18" height="18" rx="3" />
+    <path d="M8 9.5a4 4 0 0 1 8 0" />
+    <path d="M9 13.5v.01M12 13.5v.01M15 13.5v.01M9 16v.01M12 16v.01M15 16v.01" strokeWidth={2.5} />
+  </svg>
+);
+
+export const RoomSizeIcon = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base} width={16} height={16} {...p}>
+    <rect x="3" y="3" width="18" height="18" rx="2.5" />
+    <path d="M7 7h10v10H7z" />
+  </svg>
+);

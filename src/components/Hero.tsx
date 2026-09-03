@@ -25,8 +25,8 @@ function formatDate(value: string) {
 
 export function Hero({
   photoSrc,
-  whatsappNumber = "911234567890",
-  phoneNumber = "+911234567890",
+  whatsappNumber = "918065072001",
+  phoneNumber = "+918065072001",
   mapsUrl = "https://maps.google.com/?q=The+Blue+Lake+Igatpuri",
   onSearch,
 }: {
@@ -141,15 +141,15 @@ export function Hero({
 
         {/* HERO CONTENT */}
         <div className="absolute bottom-[90px] left-0 w-full px-5 text-white sm:px-8 md:bottom-[130px] lg:px-16">
-          <p className="py-3 font-semibold tracking-[0.18em] text-text-on-dark uppercase">
+          <p className="whitespace-nowrap py-3 text-[14px] font-semibold tracking-[0.06em] text-text-on-dark uppercase sm:text-base sm:tracking-[0.18em]">
             Lakeside Serenity. Timeless Memories.
           </p>
 
-          <h1 className="max-w-[14ch] py-3 font-display text-[clamp(30px,5.5vw,52px)] leading-[1.08] font-semibold uppercase">
+          <h1 className="max-w-[14ch] py-3 font-display text-[20px] font-semibold leading-[1.08] uppercase sm:text-[clamp(30px,5.5vw,52px)]">
             THE BLUE LAKE, IGATPURI
           </h1>
 
-          <p className="mt-[18px] max-w-[38ch] text-text-on-dark">
+          <p className="mt-[18px] text-[14px] max-w-[44ch] text-text-on-dark sm:text-base sm:max-w-[38ch]">
             A serene lakeside resort in Murambi, Igatpuri, where nature&rsquo;s
             calm meets refined comfort.
           </p>
@@ -160,16 +160,17 @@ export function Hero({
           className="
             absolute
             right-3
-            top-1/2
+            top-[105px]
             z-[5]
             flex
-            -translate-y-1/2
             flex-col
             overflow-hidden
             rounded-[24px]
             bg-navy-deep
             shadow-[var(--shadow-card)]
             sm:right-8
+            sm:top-1/2
+            sm:-translate-y-1/2
           "
         >
           {/* WHATSAPP */}
@@ -244,7 +245,7 @@ export function Hero({
     relative mx-auto
     grid w-full max-w-[1280px]
     grid-cols-1
-    overflow-hidden
+    overflow-visible
     rounded-[8px]
     bg-white
     shadow-[0_12px_35px_rgba(11,37,69,0.12)]
@@ -264,7 +265,10 @@ export function Hero({
               border-border
               px-[22px]
               py-4
+              rounded-t-[8px]
               md:border-b-0
+              md:rounded-tr-none
+              md:rounded-l-[8px]
             "
             onClick={openCheckInPicker}
           >
@@ -620,6 +624,9 @@ export function Hero({
               uppercase
               transition-colors
               hover:bg-navy-darker
+              rounded-b-[8px]
+              md:rounded-bl-none
+              md:rounded-r-[8px]
             "
           >
             Check Availability

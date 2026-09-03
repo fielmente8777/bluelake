@@ -6,6 +6,8 @@ import {
   GuestsIcon,
   BedIcon,
   PinIcon,
+  BathroomIcon,
+  RoomSizeIcon,
   ChevronLeftCircle,
   ChevronRightCircle,
 } from "./icons";
@@ -24,7 +26,7 @@ export function RoomsSuites() {
       setCurrentImages((prev) => {
         const nextImages = { ...prev };
 
-        rooms.slice(0, 4).forEach((room) => {
+        rooms.forEach((room) => {
           if (!room.images || room.images.length <= 1) return;
 
           const currentIndex = prev[room.name] ?? 0;
@@ -80,7 +82,7 @@ export function RoomsSuites() {
 
         {/* ================= HEADER ================= */}
         <div className="py-3 flex flex-col items-center text-center">
-          <p className="flex items-center gap-2 font-sans text-[24px] font-bold tracking-[0.16em] text-gold uppercase">
+          <p className="flex items-center gap-2 font-sans text-[14px] font-bold tracking-[0.16em] text-gold uppercase sm:text-[24px]">
             <span className="block h-px w-[20px] bg-gold" />
 
             Stay in Comfort
@@ -90,7 +92,7 @@ export function RoomsSuites() {
 
           <h2
             id="rooms-title"
-            className="mt-[12px] py-2 font-display text-[40px] leading-none text-navy-deep"
+            className="mt-[12px] py-2 font-display text-[20px] leading-none text-navy-deep sm:text-[40px]"
           >
             Rooms &amp; Suites
           </h2>
@@ -102,9 +104,9 @@ export function RoomsSuites() {
         </div>
 
         {/* ================= ROOM CARDS ================= */}
-        <ul className="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-3">
 
-          {rooms.slice(0, 4).map((room) => {
+          {rooms.map((room) => {
             const images = room.images ?? [];
 
             const currentIndex = currentImages[room.name] ?? 0;
@@ -153,12 +155,13 @@ export function RoomsSuites() {
         rounded-full
         bg-black/45
         text-white
-        opacity-0
+        opacity-100
         backdrop-blur-sm
         transition-all
         duration-300
         hover:bg-black/65
-        group-hover:opacity-100
+        sm:opacity-0
+        sm:group-hover:opacity-100
       "
     >
       <ChevronLeftCircle
@@ -194,12 +197,13 @@ export function RoomsSuites() {
         rounded-full
         bg-black/45
         text-white
-        opacity-0
+        opacity-100
         backdrop-blur-sm
         transition-all
         duration-300
         hover:bg-black/65
-        group-hover:opacity-100
+        sm:opacity-0
+        sm:group-hover:opacity-100
       "
     >
       <ChevronRightCircle
@@ -269,6 +273,30 @@ export function RoomsSuites() {
 
                       {room.view}
                     </span>
+
+                    {/* BATHROOM */}
+                    {room.bathroom && (
+                      <span className="inline-flex items-center gap-[4px] whitespace-nowrap">
+                        <BathroomIcon
+                          aria-hidden="true"
+                          className="h-[14px] w-[14px] shrink-0 text-navy-deep"
+                        />
+
+                        {room.bathroom}
+                      </span>
+                    )}
+
+                    {/* ROOM SIZE */}
+                    {room.roomSize && (
+                      <span className="inline-flex items-center gap-[4px] whitespace-nowrap">
+                        <RoomSizeIcon
+                          aria-hidden="true"
+                          className="h-[14px] w-[14px] shrink-0 text-navy-deep"
+                        />
+
+                        {room.roomSize}
+                      </span>
+                    )}
 
                   </div>
                 </div>

@@ -30,7 +30,7 @@ export function Footer() {
       {/* ================= MANAGED BY BANNER ================= */}
       <section
         aria-labelledby="managed-title"
-        className="relative h-[330px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[345px] lg:h-[350px]"
+        className="relative h-[280px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[345px] lg:h-[350px]"
       >
         <PhotoPlaceholder
           src="/images/BLR_EDIITED-24_11zon.jpg"
@@ -39,25 +39,25 @@ export function Footer() {
           className="absolute inset-0 h-full !aspect-auto"
         />
 
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.85)_0%,rgba(11,37,69,0.60)_50%,rgba(11,37,69,0)_85%)] sm:bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
 
-        <div className="absolute inset-0 flex items-start px-5 pt-[40px] sm:px-8 lg:px-[7.5%]">
+        <div className="absolute inset-0 z-10 flex items-center px-5 py-4 sm:items-start sm:px-8 sm:pt-[40px] lg:px-[7.5%]">
           <div className="max-w-[520px]">
             {/* MANAGED BY */}
-            <p className="m-0 text-[16px] font-bold tracking-[0.08em] text-white uppercase">
+            <p className="m-0 text-[14px] font-bold tracking-[0.08em] text-white uppercase sm:text-[16px]">
               Managed By
             </p>
 
             {/* TITLE */}
             <h2
               id="managed-title"
-              className="mt-3 font-sans text-[32px] leading-[1.1] font-semibold text-white"
+              className="mt-1.5 font-sans text-[20px] font-semibold leading-[1.1] text-white sm:mt-3 sm:text-[32px]"
             >
               Ante Meridiem Hotels &amp; Resorts
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="mt-[28px] max-w-[520px] text-[18px] leading-[1.65] text-white">
+            <p className="mt-2 max-w-[520px] text-[13px] leading-[1.45] text-white sm:mt-[28px] sm:text-[18px] sm:leading-[1.65]">
               With a commitment to excellence, we bring world-class hospitality,
               operational expertise and a passion for creating memorable stays.
             </p>
@@ -65,7 +65,7 @@ export function Footer() {
             {/* BOOK NOW */}
             <a
               href="#about-ante-meridiem"
-              className="mt-[24px] inline-flex items-center bg-white px-7 py-4 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100"
+              className="mt-3 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4"
             >
               Book Now
             </a>
@@ -76,96 +76,85 @@ export function Footer() {
       {/* ================= FOOTER ================= */}
       <footer
         id="contact"
-        className="bg-navy-deep px-5 pt-[42px] font-sans text-text-on-dark sm:px-8 lg:px-16"
+        className="bg-navy-deep px-5 pt-8 font-sans text-text-on-dark sm:px-8 sm:pt-[42px] lg:px-16"
       >
         <div className="mx-auto max-w-[1280px]">
-          {/* ================= LET'S CONNECT ================= */}
-          <div className="mb-[32px] flex items-center justify-center">
-            <p className="m-0 flex items-center justify-center gap-2.5 text-[16px] font-bold text-white uppercase">
-              <span className="h-px w-[24px] bg-white/60" />
-              Let&rsquo;s Connect
-              <span className="h-px w-[24px] bg-white/60" />
-            </p>
-          </div>
-
           {/* ================= MAIN FOOTER CONTENT ================= */}
-          <div className="grid gap-[32px] md:grid-cols-[1.15fr_1fr_1fr] md:gap-0">
+          <div className="grid gap-6 md:grid-cols-[1.15fr_1fr_1fr] md:gap-0">
             {/* ================= PLAN YOUR ESCAPE ================= */}
-            <div className="md:pr-[40px]">
-              <h2 className="max-w-lg font-sans text-[32px] font-semibold text-white mb-5!">
+            <div className="flex flex-col items-start text-left md:pr-[40px]">
+              <h2 className="mb-2 max-w-lg font-sans text-[20px] font-semibold text-white sm:mb-3 sm:text-[32px]">
                 Plan Your Escape to Serenity
               </h2>
 
-              <p className="mt-3 max-w-[30ch] text-text-on-dark-muted">
+              <p className="mt-2 max-w-[30ch] text-[14px] text-text-on-dark-muted sm:mt-3 sm:text-base">
                 Book your stay or reach out to us for enquiries, events and
                 special offers.
               </p>
             </div>
 
             {/* ================= LOCATION ================= */}
-            <div className="border-t border-white/15 md:border-t-0 md:border-l md:pt-0 md:px-10 py-6">
-              <h3 className="mb-3 font-sans text-[14px] font-bold text-white uppercase">
+            <div className="border-t border-white/15 py-4 md:border-t-0 md:border-l md:px-10 md:py-0">
+              <h3 className="mb-2 font-sans text-[13px] font-bold text-white uppercase sm:mb-3 sm:text-[14px]">
                 Location
               </h3>
 
-              <div className="py-3 flex gap-3">
+              <div className="flex gap-2.5 py-2 sm:py-3">
                 <PinIcon
                   aria-hidden="true"
-                  className="mt-px h-5 w-5 shrink-0 text-white"
+                  className="mt-px h-4 w-4 shrink-0 text-white sm:h-5 sm:w-5"
                 />
 
-                <p className="m-0 text-[14px] text-text-on-dark">
+                <p className="m-0 text-[13px] text-text-on-dark sm:text-[14px]">
                   {contactDetails.address}
                 </p>
               </div>
 
-              <h3 className="mb-3 font-sans text-[14px] font-bold text-white uppercase">
+              <h3 className="mb-2 mt-2 font-sans text-[13px] font-bold text-white uppercase sm:mb-3 sm:mt-0 sm:text-[14px]">
                 Phone
               </h3>
 
-              <div className="py-3 flex gap-3">
+              <div className="flex gap-2.5 py-2 sm:py-3">
                 <PhoneIcon
                   aria-hidden="true"
-                  className="mt-px h-5 w-5 shrink-0 text-white"
+                  className="mt-px h-4 w-4 shrink-0 text-white sm:h-5 sm:w-5"
                 />
 
-                <p className="m-0 text-[14px] leading-[1.5] text-text-on-dark">
+                <p className="m-0 text-[13px] leading-[1.5] text-text-on-dark sm:text-[14px]">
                   {contactDetails.phones.join(" / ")}
                 </p>
               </div>
 
-              <h3 className="mb-3 font-sans text-[14px] font-bold text-white uppercase">
+              <h3 className="mb-2 mt-2 font-sans text-[13px] font-bold text-white uppercase sm:mb-3 sm:mt-0 sm:text-[14px]">
                 Email
               </h3>
 
-              <div className="flex gap-3 py-3">
+              <div className="flex gap-2.5 py-2 sm:py-3">
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
-                  className="mt-px h-5 w-5 shrink-0 text-white"
+                  className="mt-px h-4 w-4 shrink-0 text-white sm:h-5 sm:w-5"
                 >
                   <rect x="3" y="5" width="18" height="14" rx="1" />
                   <path d="m3 7 9 6 9-6" />
                 </svg>
 
-                <div className="m-0 flex flex-col text-[14px] leading-[1.5] text-text-on-dark">
-                  {contactDetails.email.map((email) => (
-                    <span key={email}>{email}</span>
-                  ))}
-                </div>
+                <p className="m-0 text-[13px] leading-[1.5] text-text-on-dark sm:text-[14px]">
+                  {contactDetails.email.join(" / ")}
+                </p>
               </div>
             </div>
 
             {/* ================= FOLLOW US ================= */}
-            <div className="border-t border-white/15 pt-[28px] md:border-t-0 md:border-l md:pt-0 md:pl-[38px]">
-              <h3 className="mb-3 font-sans text-[14px] font-bold tracking-[0.1em] text-white uppercase">
+            <div className="border-t border-white/15 pt-4 md:border-t-0 md:border-l md:pt-0 md:pl-[38px]">
+              <h3 className="mb-2 font-sans text-[13px] font-bold tracking-[0.1em] text-white uppercase sm:mb-3 sm:text-[14px]">
                 Follow Us
               </h3>
 
-              <div className="py-3 flex gap-2.5">
+              <div className="flex gap-2.5 py-2 sm:py-3">
                 <a
                   href="https://www.instagram.com/thebluelakeresort?igsi=MTg1MDBiNW9pZTJkZQ=="
                   aria-label="Instagram"
@@ -183,11 +172,11 @@ export function Footer() {
                 </a>
               </div>
 
-              <h3 className="font-sans text-[14px] font-bold text-white uppercase">
+              <h3 className="mt-2 font-sans text-[13px] font-bold text-white uppercase sm:mt-0 sm:text-[14px]">
                 Newsletter
               </h3>
 
-              <p className="py-3 text-[14px] text-text-on-dark">
+              <p className="py-2 text-[13px] text-text-on-dark sm:py-3 sm:text-[14px]">
                 Stay updated with our latest offers and experiences.
               </p>
 
@@ -207,7 +196,7 @@ export function Footer() {
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="min-w-0 flex-1 border-none bg-white px-3 font-sans text-[11px] text-navy-deep placeholder:text-[#777] focus:outline-none"
+                  className="min-w-0 flex-1 border-none bg-white px-3 font-sans text-[12px] text-navy-deep placeholder:text-[#777] focus:outline-none"
                 />
 
                 <button
@@ -220,7 +209,7 @@ export function Footer() {
               </form>
 
               {submitted && (
-                <p role="status" className="mt-1.5 text-[14px] text-gold">
+                <p role="status" className="mt-1.5 text-[13px] text-gold sm:text-[14px]">
                   Thanks — you&rsquo;re subscribed!
                 </p>
               )}
@@ -228,10 +217,10 @@ export function Footer() {
           </div>
 
           {/* ================= COPYRIGHT ================= */}
-          <div className="mt-[34px] flex min-h-[48px] flex-col items-start gap-3 border-t border-white/20 pt-4 pb-4 font-sans text-[14px] text-text-on-dark-muted sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-6 flex min-h-[48px] flex-col items-start gap-3 border-t border-white/20 pt-4 pb-6 font-sans text-[13px] text-text-on-dark-muted sm:mt-[34px] sm:flex-row sm:items-center sm:justify-between sm:text-[14px]">
             <span>© 2025 The Blue Lake, Igatpuri. All Rights Reserved.</span>
 
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 sm:gap-6">
               <Link
                 href="/privacy-policy"
                 className="transition-colors hover:text-white"

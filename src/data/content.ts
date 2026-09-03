@@ -2,7 +2,7 @@ export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#about" },
   { label: "Rooms", href: "#rooms" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -37,9 +37,11 @@ export const featureItems = [
 export const rooms = [
   {
     name: "Deluxe Lake View AC",
-    guests: "2 Guests",
-    beds: "1 Queen Bed",
+    roomSize: "180 sq.ft(17 sq.mt.)",
     view: "Lake View",
+    beds: "1 Queen Bed",
+    bathroom: "1 Bathroom",
+    guests: "Max 3 Guests",
     images: [
       "/rooms/deluxe.jpg",
       "/rooms/beddelux.jpg",
@@ -50,9 +52,12 @@ export const rooms = [
   },
   {
     name: "Super Deluxe Lake View",
-    guests: "4 Guests",
-    beds: "1 King Bed or 2 Single Beds",
+    roomSize: "280 sq.ft(26 sq.mt.)",
     view: "Lake View",
+    beds: "1 King Bed or 2 Single Beds",
+    bathroom: "1 Bathroom",
+    guests: "Max 3 Guests",
+    
     images: [
       "/rooms/Superdeluxe.jpg",
       "/rooms/super/bath.jpg",
@@ -66,27 +71,17 @@ export const rooms = [
   },
   {
     name: "Deluxe Garden View AC",
-    guests: "2 Guests",
-    beds: "1 King Bed",
+    roomSize: "180 sq.ft(17 sq.mt.)",
     view: "Garden View",
+    beds: "1 King Bed",
+    bathroom: "1 Bathroom",
+    guests: "Max 3 Guests",
+    
     images: [
       "/rooms/deluxe.jpg",
       "/rooms/garden/202002111643316554-abe864aadcf511eca6940a58a9feac02.jpg",
       "/rooms/garden/bed.jpg",
       "/rooms/deleuxelake.jpg",
-    ],
-  },
-  {
-    name: "Deluxe Lake View AC",
-    guests: "2 Guests",
-    beds: "1 Queen Bed",
-    view: "Lake View",
-    images: [
-      "/rooms/deluxe.jpg",
-      "/rooms/beddelux.jpg",
-      "/rooms/bathdeluxe.jpg",
-      "/rooms/deleuxelake.jpg",
-      "/rooms/deluxebath.jpg",
     ],
   },
 ];
@@ -134,39 +129,42 @@ export const experienceCards = [
 ];
 
 export const galleryImages = [
-  {
-    image: "/images/DJI_0903_11zon.jpg",
-    alt: "Lakeside view of The Blue Lake Resort",
-  },
-  
-  {
-    image: "/gallery/BLR_EDIITED-65_11zon.jpg",
-    alt: "Poolside view at The Blue Lake Resort",
-  },
-  {
-    image: "/gallery/BLR_EDIITED-7_11zon.jpg",
-    alt: "Beautiful resort surroundings",
-  },
-  {
-    image: "/gallery/BLR_EDIITED-18_11zon.jpg",
-    alt: "Lakeside resort experience",
-  },
-  {
-    image: "/gallery/BLR_EDIITED-21_11zon.jpg",
-    alt: "Resort outdoor area",
-  },
-  {
-    image: "/rooms/super/sup.jpg",
-    alt: "Aerial view of the resort property",
-  },
-  {
-    image: "/gallery/BLR_EDIITED-48_11zon.jpg",
-    alt: "The Blue Lake Resort view",
-  },
-  {
-    image: "/gallery/BLR_EDIITED-53_11zon.jpg",
-    alt: "Sunset view at The Blue Lake Resort",
-  },
+  { image: "/images/resturant14.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant3.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant27.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant8.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant31.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant19.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant2.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant35.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant11.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant22.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant5.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant18.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant29.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant1.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant16.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant24.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant9.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant33.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant6.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant20.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant36.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant13.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant28.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant4.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant17.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant30.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant10.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant25.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant7.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant15.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant32.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant21.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant12.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant26.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant34.jpeg", alt: "The Blue Lake Resort Igatpuri" },
+  { image: "/images/resturant23.jpeg", alt: "The Blue Lake Resort Igatpuri" },
 ];
 
 export const contactDetails = {
