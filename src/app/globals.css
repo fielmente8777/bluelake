@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
+  --font-cormorant: "Cormorant Garamond", serif;
   /* =========================
      COLORS
      ========================= */
@@ -32,6 +33,7 @@
 
   --font-display: ui-sans-serif, system-ui, sans-serif;
   --font-body: ui-sans-serif, system-ui, sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
 
   /* =========================
      SHADOWS
@@ -65,6 +67,7 @@ html {
 
 body {
   margin: 0;
+  --font-cormorant: "Cormorant Garamond", serif;
   font-family: ui-sans-serif, system-ui, sans-serif;
   color: var(--color-navy-text);
   background: var(--color-off-white);

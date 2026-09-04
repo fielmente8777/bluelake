@@ -45,19 +45,19 @@ export function Footer() {
           <div className="max-w-[520px]">
             {/* MANAGED BY */}
             <p className="m-0 text-[14px] font-bold tracking-[0.08em] text-white uppercase sm:text-[16px]">
-              Managed By
+              A UNIT OF
             </p>
 
             {/* TITLE */}
             <h2
               id="managed-title"
-              className="mt-1.5 font-sans text-[20px] font-semibold leading-[1.1] text-white sm:mt-3 sm:text-[32px]"
+              className="font-cormorant! text-[20px] font-semibold text-white sm:mt-3 md:text-5xl uppercase"
             >
-              Ante Meridiem Hotels &amp; Resorts
+              Ante Meridiem
             </h2>
 
             {/* DESCRIPTION */}
-            <p className="mt-2 max-w-[520px] text-[13px] leading-[1.45] text-white sm:mt-[28px] sm:text-[18px] sm:leading-[1.65]">
+            <p className="mt-1.5 max-w-[520px] text-[13px] text-white sm:mt-[28px] sm:text-[18px]">
               With a commitment to excellence, we bring world-class hospitality,
               operational expertise and a passion for creating memorable stays.
             </p>
@@ -65,8 +65,15 @@ export function Footer() {
             {/* BOOK NOW */}
             <a
               href="#about-ante-meridiem"
-              className="mt-3 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4"
+              className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4"
             >
+              <span className="mr-3 flex items-center border-r border-navy-deep/30 pr-3">
+                <img
+                  src="/images/logo.jpeg"
+                  alt="Logo"
+                  className="h-5 w-auto object-contain"
+                />
+              </span>
               Book Now
             </a>
           </div>
@@ -209,7 +216,10 @@ export function Footer() {
               </form>
 
               {submitted && (
-                <p role="status" className="mt-1.5 text-[13px] text-gold sm:text-[14px]">
+                <p
+                  role="status"
+                  className="mt-1.5 text-[13px] text-gold sm:text-[14px]"
+                >
                   Thanks — you&rsquo;re subscribed!
                 </p>
               )}
