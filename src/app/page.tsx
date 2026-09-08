@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         <AboutUs />
         <FeatureStrip />
-        <RoomsSuites />
+        {/* <RoomsSuites /> */}
         <ExperiencesStrip />
         <Gallery />
       </main>

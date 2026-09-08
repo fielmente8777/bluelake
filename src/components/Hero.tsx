@@ -24,17 +24,29 @@ function formatDate(value: string) {
 }
 
 export function Hero({
-  photoSrc,
+  photoSrc = "/images/DJI_0856_11zon.jpg",
+  alt = "Aerial view of The Blue Lake resort at dusk, buildings lit along the lakeshore surrounded by mountains",
+  tagline = "Lakeside Serenity. Timeless Memories.",
+  title = "THE BLUE LAKE, IGATPURI",
+  subtitle = "A serene lakeside resort in Murambi, Igatpuri, where nature’s calm meets refined comfort.",
   whatsappNumber = "918065072001",
   phoneNumber = "+918065072001",
   mapsUrl = "https://maps.google.com/?q=The+Blue+Lake+Igatpuri",
   onSearch,
+  showBookingBar = true,
+  align = "left",
 }: {
   photoSrc?: string;
+  alt?: string;
+  tagline?: string;
+  title?: string;
+  subtitle?: string;
   whatsappNumber?: string;
   phoneNumber?: string;
   mapsUrl?: string;
   onSearch?: (params: any) => void;
+  showBookingBar?: boolean;
+  align?: "left" | "center";
 }) {
   const today = new Date().toISOString().slice(0, 10);
 
@@ -130,8 +142,8 @@ export function Hero({
       {/* ================= HERO ================= */}
       <div className="relative">
         <PhotoPlaceholder
-          src="/images/DJI_0856_11zon.jpg"
-          alt="Aerial view of The Blue Lake resort at dusk, buildings lit along the lakeshore surrounded by mountains"
+          src={photoSrc}
+          alt={alt}
           ratio="21 / 9"
           className="!aspect-auto h-[620px] md:h-[668px]"
         />
@@ -140,19 +152,34 @@ export function Hero({
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(100deg,rgba(11,37,69,0.72)_0%,rgba(11,37,69,0.32)_45%,rgba(11,37,69,0.05)_70%)]" />
 
         {/* HERO CONTENT */}
-        <div className="absolute bottom-[90px] left-0 w-full px-5 text-white sm:px-8 md:bottom-[130px] lg:px-16">
-          <p className="whitespace-nowrap py-3 text-[14px] font-semibold tracking-[0.06em] text-text-on-dark uppercase sm:text-base sm:tracking-[0.18em]">
-            Lakeside Serenity. Timeless Memories.
-          </p>
+        <div
+          className={`absolute ${
+            align === "center"
+              ? "inset-0 flex flex-col items-center justify-center text-center"
+              : "bottom-[90px] left-0 text-left md:bottom-[130px]"
+          } w-full px-5 text-white sm:px-8 lg:px-16`}
+        >
+          {tagline && (
+            <p className="whitespace-nowrap py-3 text-[14px] font-semibold tracking-[0.06em] text-text-on-dark uppercase sm:text-base sm:tracking-[0.18em]">
+              {tagline}
+            </p>
+          )}
 
-          <h1 className="max-w-[14ch] py-3 font-display text-[20px] font-semibold leading-[1.08] uppercase sm:text-[clamp(30px,5.5vw,52px)]">
-            THE BLUE LAKE, IGATPURI
-          </h1>
+          {title && (
+            <h1
+              className={`${
+                align === "center" ? "max-w-none" : "max-w-[14ch]"
+              } py-3 font-display text-[20px] font-semibold leading-[1.08] uppercase sm:text-[clamp(30px,5.5vw,52px)]`}
+            >
+              {title}
+            </h1>
+          )}
 
-          <p className="mt-[18px] text-[14px] max-w-[44ch] text-text-on-dark sm:text-base sm:max-w-[38ch]">
-            A serene lakeside resort in Murambi, Igatpuri, where nature&rsquo;s
-            calm meets refined comfort.
-          </p>
+          {subtitle && (
+            <p className="mt-[18px] text-[14px] max-w-[44ch] text-text-on-dark sm:text-base sm:max-w-[38ch]">
+              {subtitle}
+            </p>
+          )}
         </div>
 
         {/* ================= SIDE CONTACT BUTTONS ================= */}
@@ -237,7 +264,9 @@ export function Hero({
       </div>
 
       {/* ================= BOOKING BAR ================= */}
-      <div className="relative z-10 -mt-[35px] px-4 md:-mt-[52px] md:px-0">
+      {showBookingBar && (
+        <>
+          <div className="relative z-10 -mt-[35px] px-4 md:-mt-[52px] md:px-0">
         <form
           aria-label="Check availability"
           onSubmit={handleSubmit}
@@ -650,6 +679,8 @@ export function Hero({
         >
           {status}
         </p>
+      )}
+        </>
       )}
     </section>
   );
