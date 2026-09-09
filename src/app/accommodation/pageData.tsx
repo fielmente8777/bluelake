@@ -76,11 +76,61 @@ export const accommodationData: AccommodationData = {
     "Explore every room and suite across The Blue Lake Resort, each one thoughtfully designed for serene, unhurried lakeside stays.",
   cards: [
     {
+      title: "Deluxe Garden View AC",
+      span: "",
+      description: "Nestled amidst manicured botanical greens and peaceful surroundings",
+      overview:
+        "Step into a peaceful retreat surrounded by lush greenery in our Deluxe Garden View AC rooms. Designed to provide a comfortable and relaxing stay, these rooms combine contemporary amenities with a refreshing garden setting. Ideal for couples, families and leisure travellers seeking a quiet escape close to nature",
+      amenities: [
+        {
+          icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
+          label: "Max 3 Guests",
+        },
+        {
+          icon: <BedIcon className="h-[14px] w-[14px] text-navy-deep" />,
+          label: "1 King Bed",
+        },
+        {
+          icon: <PinIcon className="h-[14px] w-[14px] text-navy-deep" />,
+          label: "Garden View",
+        },
+        {
+          icon: <BathroomIcon className="h-[14px] w-[14px] text-navy-deep" />,
+          label: "1 Bathroom",
+        },
+        {
+          icon: <RoomSizeIcon className="h-[14px] w-[14px] text-navy-deep" />,
+          label: "180 sq.ft (17 sq.mt.)",
+        },
+      ],
+      inRoomAmenities: [
+        { icon: <LaundryServiceIcon />, label: "Laundry Service" },
+        { icon: <HousekeepingIcon />, label: "Housekeeping" },
+        { icon: <WifiIcon />, label: "High Speed WiFi" },
+        { icon: <AttachedBathroomIcon />, label: "Attached Bathroom" },
+        { icon: <RoomServiceIcon />, label: "Room Service" },
+        { icon: <AirPurifierIcon />, label: "Air Purifier" },
+      ],
+      startingPrice: "From ₹ XX XXX/night",
+      discountCode: "BLUELAKE10",
+      discountValidTill: "31st March",
+      images: [
+        "/rooms/deluxe.jpg",
+        "/rooms/garden/202002111643316554-abe864aadcf511eca6940a58a9feac02.jpg",
+        "/rooms/garden/bed.jpg",
+        "/rooms/deleuxelake.jpg",
+      ],
+      cta: {
+        label: "Enquire Now",
+        href: makeEnquireUrl("Deluxe Garden View AC room"),
+      },
+    },
+    {
       title: "Deluxe Lake View AC",
       span: "",
       description: "Wake up to serene lake views & gentle morning breeze",
       overview:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Wake up to beautiful views of the serene Blue Lake from the comfort of our Deluxe Lake View AC rooms. Thoughtfully designed for a relaxing stay, these rooms offer a comfortable setting with modern amenities, air-conditioning and a peaceful atmosphere surrounded by nature. Perfect for couples and leisure travellers looking for a refreshing lakeside escape.",
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -131,7 +181,7 @@ export const accommodationData: AccommodationData = {
       span: "",
       description: "Expansive space, luxury comforts & uninterrupted lake vistas",
       overview:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Experience a more spacious and elevated stay in our Super Deluxe Lake View rooms, designed for guests who appreciate extra room and comfort. With captivating views of the lake, generous living space and a choice of King or Twin beds, these rooms offer the perfect blend of relaxation, convenience and natural beauty for a memorable getaway.",
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -180,55 +230,6 @@ export const accommodationData: AccommodationData = {
         href: makeEnquireUrl("Super Deluxe Lake View room"),
       },
     },
-    {
-      title: "Deluxe Garden View AC",
-      span: "",
-      description: "Nestled amidst manicured botanical greens and peaceful surroundings",
-      overview:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      amenities: [
-        {
-          icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "Max 3 Guests",
-        },
-        {
-          icon: <BedIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "1 King Bed",
-        },
-        {
-          icon: <PinIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "Garden View",
-        },
-        {
-          icon: <BathroomIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "1 Bathroom",
-        },
-        {
-          icon: <RoomSizeIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "180 sq.ft (17 sq.mt.)",
-        },
-      ],
-      inRoomAmenities: [
-        { icon: <LaundryServiceIcon />, label: "Laundry Service" },
-        { icon: <HousekeepingIcon />, label: "Housekeeping" },
-        { icon: <WifiIcon />, label: "High Speed WiFi" },
-        { icon: <AttachedBathroomIcon />, label: "Attached Bathroom" },
-        { icon: <RoomServiceIcon />, label: "Room Service" },
-        { icon: <AirPurifierIcon />, label: "Air Purifier" },
-      ],
-      startingPrice: "From ₹ XX XXX/night",
-      discountCode: "BLUELAKE10",
-      discountValidTill: "31st March",
-      images: [
-        "/rooms/deluxe.jpg",
-        "/rooms/garden/202002111643316554-abe864aadcf511eca6940a58a9feac02.jpg",
-        "/rooms/garden/bed.jpg",
-        "/rooms/deleuxelake.jpg",
-      ],
-      cta: {
-        label: "Enquire Now",
-        href: makeEnquireUrl("Deluxe Garden View AC room"),
-      },
-    },
+
   ],
 };

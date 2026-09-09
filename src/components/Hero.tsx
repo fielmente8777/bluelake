@@ -24,7 +24,7 @@ function formatDate(value: string) {
 }
 
 export function Hero({
-  photoSrc = "/images/DJI_0856_11zon.jpg",
+  photoSrc = "/home-banner image.png",
   alt = "Aerial view of The Blue Lake resort at dusk, buildings lit along the lakeshore surrounded by mountains",
   tagline = "Lakeside Serenity. Timeless Memories.",
   title = "THE BLUE LAKE, IGATPURI",
