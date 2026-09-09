@@ -17,6 +17,7 @@ export const policiesPageData: PolicyPageItem[] = [
       description:
         "Cancellation and Refund Policy of Ante Meridiem Hospitality Pvt. Ltd. (AM Hotels & Resorts) for direct, website, OTA, and third-party reservations.",
     },
+    
     title: "Ante Meridiem Hospitality Pvt. Ltd.",
     content: `
       <div>
