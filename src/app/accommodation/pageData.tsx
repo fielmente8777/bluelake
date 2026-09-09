@@ -9,6 +9,11 @@ import {
 import {
   WifiIcon,
   AttachedBathroomIcon,
+  MineralWaterIcon,
+  LaundryServiceIcon,
+  HousekeepingIcon,
+  RoomServiceIcon,
+  AirPurifierIcon,
 } from "@/utils/amenitiesIcon";
 
 export interface AmenityItem {
@@ -75,7 +80,7 @@ export const accommodationData: AccommodationData = {
       span: "",
       description: "Wake up to serene lake views & gentle morning breeze",
       overview:
-        "Where the soothing rhythm of peaceful lake waters meets contemporary boutique architecture, the Deluxe Lake View Room is a hidden gem in our collection. Spanning 180 sq. ft. of thoughtfully designed sanctuary, this intimate retreat enjoys its own waterfront vantage, offering guests an exclusive escape immersed in nature's quiet beauty.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -99,12 +104,12 @@ export const accommodationData: AccommodationData = {
         },
       ],
       inRoomAmenities: [
-        { icon: <WifiIcon />, label: "Mineral Water" },
-        { icon: <WifiIcon />, label: "Laundry Service" },
-        { icon: <WifiIcon />, label: "Housekeeping" },
+        { icon: <MineralWaterIcon />, label: "Mineral Water" },
+        { icon: <LaundryServiceIcon />, label: "Laundry Service" },
+        { icon: <HousekeepingIcon />, label: "Housekeeping" },
         { icon: <WifiIcon />, label: "High Speed WiFi" },
         { icon: <AttachedBathroomIcon />, label: "Attached Bathroom" },
-        { icon: <WifiIcon />, label: "Room Service" },
+        { icon: <RoomServiceIcon />, label: "Room Service" },
       ],
       startingPrice: "From ₹ xx xxx/night",
       discountCode: "xx xxx",
@@ -126,7 +131,7 @@ export const accommodationData: AccommodationData = {
       span: "",
       description: "Expansive space, luxury comforts & uninterrupted lake vistas",
       overview:
-        "Designed for those who crave elevated comfort and panoramic lake views, the Super Deluxe Suite offers an expansive 280 sq. ft. of luxury. Featuring premium hardwood finishes, an expansive sitting area, and generous windows facing the shimmering waters, this suite redefines lakeside hospitality in Igatpuri.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -150,12 +155,12 @@ export const accommodationData: AccommodationData = {
         },
       ],
       inRoomAmenities: [
-        { icon: <WifiIcon />, label: "Mineral Water" },
-        { icon: <WifiIcon />, label: "Laundry Service" },
+        { icon: <MineralWaterIcon />, label: "Mineral Water" },
+        { icon: <LaundryServiceIcon />, label: "Laundry Service" },
         { icon: <AttachedBathroomIcon />, label: "Attached Bathroom" },
-        { icon: <WifiIcon />, label: "Room Service" },
-        { icon: <WifiIcon />, label: "Air Purifier" },
-        { icon: <WifiIcon />, label: "Housekeeping" },
+        { icon: <RoomServiceIcon />, label: "Room Service" },
+        { icon: <AirPurifierIcon />, label: "Air Purifier" },
+        { icon: <HousekeepingIcon />, label: "Housekeeping" },
       ],
       startingPrice: "From ₹ xx xxx/night",
       discountCode: "xx xxx",
@@ -180,7 +185,7 @@ export const accommodationData: AccommodationData = {
       span: "",
       description: "Nestled amidst manicured botanical greens and peaceful surroundings",
       overview:
-        "Nestled amidst manicured gardens and tropical greenery, the Deluxe Garden View Room offers a peaceful hideaway. Surrounded by vibrant flowers and gentle nature breezes, this room provides the ultimate quietude for a rejuvenating holiday.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -204,12 +209,12 @@ export const accommodationData: AccommodationData = {
         },
       ],
       inRoomAmenities: [
-        { icon: <WifiIcon />, label: "Laundry Service" },
-        { icon: <WifiIcon />, label: "Housekeeping" },
+        { icon: <LaundryServiceIcon />, label: "Laundry Service" },
+        { icon: <HousekeepingIcon />, label: "Housekeeping" },
         { icon: <WifiIcon />, label: "High Speed WiFi" },
         { icon: <AttachedBathroomIcon />, label: "Attached Bathroom" },
-        { icon: <WifiIcon />, label: "Room Service" },
-        { icon: <WifiIcon />, label: "Air Purifier" },
+        { icon: <RoomServiceIcon />, label: "Room Service" },
+        { icon: <AirPurifierIcon />, label: "Air Purifier" },
       ],
       startingPrice: "From ₹ XX XXX/night",
       discountCode: "BLUELAKE10",

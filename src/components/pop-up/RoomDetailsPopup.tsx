@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { RoomCardItem } from "@/app/rooms/pageData";
+import { RoomCardItem } from "@/app/accommodation/pageData";
 import { SwiperCarousel } from "@/components/sliders/SwiperCarousel";
 import { LinkButton } from "@/components/buttons/LinkButton";
 
