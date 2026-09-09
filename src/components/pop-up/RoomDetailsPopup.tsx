@@ -96,7 +96,7 @@ export function RoomDetailsPopup({ room, onClose }: RoomDetailsPopupProps) {
             {/* Long Overview Paragraphs */}
             {moreInfo?.description && (
               <div className="text-xs sm:text-sm text-[#57534E] leading-relaxed space-y-3 pt-2">
-                {moreInfo.description.map((para, i) => (
+                {moreInfo.description.map((para: string, i: number) => (
                   <p key={i}>{para}</p>
                 ))}
               </div>
@@ -104,7 +104,7 @@ export function RoomDetailsPopup({ room, onClose }: RoomDetailsPopupProps) {
 
             {/* Structured Sections (Explore your stay, Curated Add-ons, Essential Stay Info) */}
             {moreInfo?.listOfData &&
-              moreInfo.listOfData.map((section, sIdx) => (
+              moreInfo.listOfData.map((section, sIdx: number) => (
                 <div key={sIdx} className="pt-3">
                   <h3 className="text-sm sm:text-base font-bold text-[#0b2545] uppercase tracking-wide mb-2">
                     {section.title}
@@ -118,7 +118,7 @@ export function RoomDetailsPopup({ room, onClose }: RoomDetailsPopupProps) {
 
                   {section.list && (
                     <ul className="space-y-2 text-xs sm:text-sm text-[#57534E]">
-                      {section.list.map((item, lIdx) => (
+                      {section.list.map((item: string, lIdx: number) => (
                         <li
                           key={lIdx}
                           className="leading-relaxed list-disc list-inside"

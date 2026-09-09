@@ -16,6 +16,23 @@ export interface AmenityItem {
   label: string;
 }
 
+export interface RoomDetailsSection {
+  title: string;
+  description?: string;
+  list?: string[];
+}
+
+export interface RoomReview {
+  author: string;
+  description: string;
+}
+
+export interface RoomMoreInfo {
+  description?: string[];
+  listOfData?: RoomDetailsSection[];
+  review?: RoomReview;
+}
+
 export interface RoomCardItem {
   title: string;
   span?: string;
@@ -31,6 +48,7 @@ export interface RoomCardItem {
     label: string;
     href: string;
   };
+  moreInfo?: RoomMoreInfo;
 }
 
 export interface AccommodationData {
