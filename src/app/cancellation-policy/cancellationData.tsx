@@ -11,6 +11,7 @@ export interface PolicyPageItem {
 export const policiesPageData: PolicyPageItem[] = [
   {
     slug: "cancellation-policy",
+    
     metaData: {
       title: "Cancellation & Refund Policy | AM Hotels & Resorts",
       description:
