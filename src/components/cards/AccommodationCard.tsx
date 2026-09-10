@@ -23,9 +23,8 @@ export function AccommodationCard({
     <div className="w-full max-w-7xl mx-auto my-6 lg:my-8 bg-white lg:bg-transparent border-2 border-[#0b2545] lg:border-none rounded-2xl lg:rounded-none overflow-hidden lg:overflow-visible shadow-sm lg:shadow-none grid grid-cols-1 lg:grid-cols-10 gap-0 lg:gap-6 items-stretch">
       {/* Image Slider (Top attached inside card on Mobile, Col-span 6 on Desktop) */}
       <div
-        className={`w-full h-[260px] sm:h-[340px] lg:h-[480px] lg:col-span-6 lg:rounded-2xl overflow-hidden ${
-          isImageRight ? "lg:order-last" : "lg:order-first"
-        }`}
+        className={`w-full h-[260px] sm:h-[340px] lg:h-[480px] lg:col-span-6 lg:rounded-2xl overflow-hidden ${isImageRight ? "lg:order-last" : "lg:order-first"
+          }`}
       >
         <SwiperCarousel
           images={room.images}
@@ -74,8 +73,8 @@ export function AccommodationCard({
         <AmenitiesSlider amenities={room.inRoomAmenities} />
 
         {/* CTA Button */}
-        <div className="pt-3">
-          <LinkButton href={enquireUrl} label={room.cta?.label || "ENQUIRE NOW"} />
+        <div className="pt-3 flex justify-center w-full">
+          <LinkButton href={enquireUrl} label={room.cta?.label || "Book Now"} />
         </div>
       </div>
     </div>
