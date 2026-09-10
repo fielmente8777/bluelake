@@ -138,12 +138,6 @@ export const ChevronDown = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const ArrowIcon = (p: SVGProps<SVGSVGElement>) => (
-  <svg {...base} width={16} height={16} {...p}>
-    <path d="M5 12h14M13 6l6 6-6 6" />
-  </svg>
-);
-
 export const ChevronLeftCircle = (p: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...p}>
     <circle cx="12" cy="12" r="10" />
@@ -170,13 +164,6 @@ export const FacebookIcon = (p: SVGProps<SVGSVGElement>) => (
   <svg {...base} width={18} height={18} {...p}>
     <circle cx="12" cy="12" r="10" />
     <path d="M14 8h-1.5A1.5 1.5 0 0 0 11 9.5V12h3l-.5 3H11v6" />
-  </svg>
-);
-
-export const YoutubeIcon = (p: SVGProps<SVGSVGElement>) => (
-  <svg {...base} width={18} height={18} {...p}>
-    <rect x="2" y="6" width="20" height="12" rx="3" />
-    <path d="M10 9.5l5 2.5-5 2.5v-5z" fill="currentColor" stroke="none" />
   </svg>
 );
 

@@ -21,23 +21,6 @@ export interface AmenityItem {
   label: string;
 }
 
-export interface RoomDetailsSection {
-  title: string;
-  description?: string;
-  list?: string[];
-}
-
-export interface RoomReview {
-  author: string;
-  description: string;
-}
-
-export interface RoomMoreInfo {
-  description?: string[];
-  listOfData?: RoomDetailsSection[];
-  review?: RoomReview;
-}
-
 export interface RoomCardItem {
   title: string;
   span?: string;
@@ -45,15 +28,11 @@ export interface RoomCardItem {
   overview?: string;
   amenities: AmenityItem[];
   inRoomAmenities: AmenityItem[];
-  startingPrice: string;
-  discountCode?: string;
-  discountValidTill?: string;
   images: string[];
   cta: {
     label: string;
     href: string;
   };
-  moreInfo?: RoomMoreInfo;
 }
 
 export interface AccommodationData {
@@ -62,12 +41,6 @@ export interface AccommodationData {
   description: string;
   cards: RoomCardItem[];
 }
-
-const WHATSAPP_PHONE = "918065072001";
-const makeEnquireUrl = (roomName: string) =>
-  `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(
-    `Hello, I want to enquire about ${roomName} at The Blue Lake Resort Igatpuri.`
-  )}`;
 
 export const accommodationData: AccommodationData = {
   tagline: "OUR ACCOMMODATION",
@@ -80,11 +53,11 @@ export const accommodationData: AccommodationData = {
       span: "",
       description: "Nestled amidst manicured botanical greens and peaceful surroundings",
       overview:
-        "Step into a peaceful retreat surrounded by lush greenery in our Deluxe Garden View AC rooms. Designed to provide a comfortable and relaxing stay, these rooms combine contemporary amenities with a refreshing garden setting. Ideal for couples, families and leisure travellers seeking a quiet escape close to nature",
+        "Step into a peaceful retreat surrounded by lush greenery in our Deluxe Garden View AC rooms. Designed to provide a comfortable and relaxing stay, these rooms combine contemporary amenities with a refreshing garden setting. Ideal for couples, families and leisure travellers seeking a quiet escape close to nature.",
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "Max 3 Guests",
+          label: "For 2 Adults",
         },
         {
           icon: <BedIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -111,9 +84,6 @@ export const accommodationData: AccommodationData = {
         { icon: <RoomServiceIcon />, label: "Room Service" },
         { icon: <AirPurifierIcon />, label: "Air Purifier" },
       ],
-      startingPrice: "From ₹ XX XXX/night",
-      discountCode: "BLUELAKE10",
-      discountValidTill: "31st March",
       images: [
         "/rooms/deluxe.jpg",
         "/rooms/garden/202002111643316554-abe864aadcf511eca6940a58a9feac02.jpg",
@@ -121,8 +91,8 @@ export const accommodationData: AccommodationData = {
         "/rooms/deleuxelake.jpg",
       ],
       cta: {
-        label: "Enquire Now",
-        href: makeEnquireUrl("Deluxe Garden View AC room"),
+        label: "Book Now",
+        href: "#about-ante-meridiem",
       },
     },
     {
@@ -134,7 +104,7 @@ export const accommodationData: AccommodationData = {
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "Max 3 Guests",
+          label: "For 2 Adults",
         },
         {
           icon: <BedIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -161,9 +131,6 @@ export const accommodationData: AccommodationData = {
         { icon: <AttachedBathroomIcon />, label: "Attached Bathroom" },
         { icon: <RoomServiceIcon />, label: "Room Service" },
       ],
-      startingPrice: "From ₹ xx xxx/night",
-      discountCode: "xx xxx",
-      discountValidTill: "xx xxx",
       images: [
         "/rooms/deluxe.jpg",
         "/rooms/beddelux.jpg",
@@ -172,8 +139,8 @@ export const accommodationData: AccommodationData = {
         "/rooms/deluxebath.jpg",
       ],
       cta: {
-        label: "Enquire Now",
-        href: makeEnquireUrl("Deluxe Lake View AC room"),
+        label: "Book Now",
+        href: "#about-ante-meridiem",
       },
     },
     {
@@ -185,7 +152,7 @@ export const accommodationData: AccommodationData = {
       amenities: [
         {
           icon: <GuestsIcon className="h-[14px] w-[14px] text-navy-deep" />,
-          label: "Max 3 Guests",
+          label: "For 2 Adults",
         },
         {
           icon: <BedIcon className="h-[14px] w-[14px] text-navy-deep" />,
@@ -212,9 +179,6 @@ export const accommodationData: AccommodationData = {
         { icon: <AirPurifierIcon />, label: "Air Purifier" },
         { icon: <HousekeepingIcon />, label: "Housekeeping" },
       ],
-      startingPrice: "From ₹ xx xxx/night",
-      discountCode: "xx xxx",
-      discountValidTill: "xx xxx",
       images: [
         "/rooms/Superdeluxe.jpg",
         "/rooms/super/bath.jpg",
@@ -226,8 +190,8 @@ export const accommodationData: AccommodationData = {
         "/rooms/super/super.jpg",
       ],
       cta: {
-        label: "Enquire Now",
-        href: makeEnquireUrl("Super Deluxe Lake View room"),
+        label: "Book Now",
+        href: "#about-ante-meridiem",
       },
     },
 

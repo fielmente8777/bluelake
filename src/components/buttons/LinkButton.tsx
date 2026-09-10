@@ -1,36 +1,42 @@
 "use client";
 
 import React from "react";
-import { WhatsAppIcon } from "@/components/icons";
 
 interface LinkButtonProps {
-  href: string;
+  href?: string;
   label?: string;
   className?: string;
   target?: string;
-  showIcon?: boolean;
+  showLogo?: boolean;
 }
 
 export function LinkButton({
-  href,
-  label = "ENQUIRE NOW",
+  href = "#about-ante-meridiem",
+  label = "Book Now",
   className = "",
-  target = "_blank",
-  showIcon = true,
+  target,
+  showLogo = true,
 }: LinkButtonProps) {
   return (
     <a
       href={href}
       target={target}
-      rel="noopener noreferrer"
-      className={`w-full flex items-center justify-center gap-2 rounded-[4px] bg-navy-deep px-5 py-3.5 text-xs font-bold tracking-[0.08em] text-white uppercase transition-colors hover:bg-navy-darker shadow-sm ${className}`}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
+      className={`inline-flex items-center justify-center bg-white border border-[#0B2545] px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:px-7 sm:py-4 shadow-xs ${className}`}
     >
-      {showIcon && (
-        <WhatsAppIcon className="h-4 w-4 shrink-0 fill-white text-white" />
+      {showLogo && (
+        <span className="mr-3 flex items-center border-r border-[#0B2545]/30 pr-3">
+          <img
+            src="/images/logo.jpeg"
+            alt="Logo"
+            className="h-5 w-auto object-contain"
+          />
+        </span>
       )}
-      <span className="text-white">{label}</span>
+      <span>{label}</span>
     </a>
   );
 }
 
 export default LinkButton;
+
