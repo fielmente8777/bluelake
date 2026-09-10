@@ -25,6 +25,7 @@ export default function RoomsPage() {
           showBookingBar={false}
         />
 
+
         {/* ================= LUXURY ACCOMMODATION CARDS ================= */}
         <section className="px-4 pt-10 pb-20 sm:px-6 sm:pt-14 lg:px-12">
           <div className="mx-auto max-w-7xl">
