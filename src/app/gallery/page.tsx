@@ -22,6 +22,7 @@ export default function GalleryPage() {
     setLightboxIndex((lightboxIndex + 1) % galleryImages.length);
   };
 
+  
   return (
     <>
       {/* ================= HEADER ================= */}
