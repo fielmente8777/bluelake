@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Cormorant_Garamond } from "next/font/google";
+import { BookingProvider } from "@/context/BookingContext";
+import { BookingModal } from "@/components/BookingModal";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -29,7 +31,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           rel="stylesheet"
         />
       </head>
-      <body  className={`${cormorant.variable}`} >{children}</body>
+      <body className={`${cormorant.variable}`}>
+        <BookingProvider>
+          {children}
+          <BookingModal />
+        </BookingProvider>
+      </body>
     </html>
   );
 }

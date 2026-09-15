@@ -5,6 +5,7 @@ import { RoomCardItem } from "@/app/accommodation/pageData";
 import { SwiperCarousel } from "@/components/sliders/SwiperCarousel";
 import { AmenitiesSlider } from "@/components/sliders/AmenitiesSlider";
 import { LinkButton } from "@/components/buttons/LinkButton";
+import { useBookingModal } from "@/context/BookingContext";
 
 export interface AccommodationCardProps {
   room: RoomCardItem;
@@ -17,7 +18,7 @@ export function AccommodationCard({
 }: AccommodationCardProps) {
   const isImageRight = index % 2 !== 0;
   const roomTitle = room.title;
-  const enquireUrl = room.cta?.href || "#";
+  const { openBookingModal } = useBookingModal();
 
   return (
     <div className="w-full max-w-7xl mx-auto my-6 lg:my-8 bg-white lg:bg-transparent border-2 border-[#0b2545] lg:border-none rounded-2xl lg:rounded-none overflow-hidden lg:overflow-visible shadow-sm lg:shadow-none grid grid-cols-1 lg:grid-cols-10 gap-0 lg:gap-6 items-stretch">
@@ -73,8 +74,12 @@ export function AccommodationCard({
         <AmenitiesSlider amenities={room.inRoomAmenities} />
 
         {/* CTA Button */}
-        <div className="pt-3 flex justify-center w-full">
-          <LinkButton href={enquireUrl} label={room.cta?.label || "Book Now"} />
+        <div className="pt-3 w-full">
+          <LinkButton
+            fullWidth
+            onClick={() => openBookingModal(roomTitle)}
+            label={room.cta?.label || "Book Now"}
+          />
         </div>
       </div>
     </div>

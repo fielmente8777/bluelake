@@ -61,7 +61,7 @@ export default function GalleryPage() {
                 <li
                   key={`${img.image}-${i}`}
                   onClick={() => setLightboxIndex(i)}
-                  className="h-[216px] cursor-pointer overflow-hidden rounded-[7px] bg-white transition-transform duration-300 hover:scale-[1.02]"
+                  className="height: 250px; cursor-pointer overflow-hidden rounded-[7px] bg-white transition-transform duration-300 hover:scale-[1.02]"
                 >
                   <img
                     src={img.image}
