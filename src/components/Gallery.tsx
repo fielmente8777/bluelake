@@ -123,7 +123,7 @@ export function Gallery() {
           {homepageGalleryImages.map((img) => (
             <li
               key={img.image}
-              className="h-[216px] overflow-hidden rounded-[7px] bg-white"
+              className="height: 250px; overflow-hidden rounded-[7px] bg-white"
             >
               <img
                 src={img.image}

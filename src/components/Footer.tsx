@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { contactDetails } from "../data/content";
 import { PhotoPlaceholder } from "./PhotoPlaceholder";
+import { useBookingModal } from "../context/BookingContext";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -15,6 +16,7 @@ import Link from "next/link";
 export function Footer() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const { openBookingModal } = useBookingModal();
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -63,9 +65,10 @@ export function Footer() {
             </p>
 
             {/* BOOK NOW */}
-            <a
-              href="#about-ante-meridiem"
-              className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4"
+            <button
+              type="button"
+              onClick={() => openBookingModal()}
+              className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4 cursor-pointer"
             >
               <span className="mr-3 flex items-center border-r border-navy-deep/30 pr-3">
                 <img
@@ -75,7 +78,7 @@ export function Footer() {
                 />
               </span>
               Book Now
-            </a>
+            </button>
           </div>
         </div>
       </section>
