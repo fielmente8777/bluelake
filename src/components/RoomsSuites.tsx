@@ -11,6 +11,7 @@ import {
   ChevronLeftCircle,
   ChevronRightCircle,
 } from "./icons";
+import { SectionWithContainer } from "./sectionComponants";
 
 export function RoomsSuites() {
   const [currentImages, setCurrentImages] = useState<Record<string, number>>(
@@ -73,14 +74,13 @@ export function RoomsSuites() {
   };
 
   return (
-    <section
-      id="rooms"
-      aria-labelledby="rooms-title"
-      className="bg-[#f8f9f3] px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
+    <SectionWithContainer
+      sectionId="rooms"
+      sectionProps={{ "aria-labelledby": "rooms-title" }}
+      sectionClassName="bg-[#f8f9f3] px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
+      defaultPadding={false}
     >
-      <div className="mx-auto max-w-[1370px]">
-
-        {/* ================= HEADER ================= */}
+      {/* ================= HEADER ================= */}
         <div className="py-3 flex flex-col items-center text-center">
           <p className="flex items-center gap-2 font-sans text-[14px] font-bold tracking-[0.16em] text-gold uppercase sm:text-[24px]">
             <span className="block h-px w-[20px] bg-gold" />
@@ -305,7 +305,6 @@ export function RoomsSuites() {
           })}
 
         </ul>
-      </div>
-    </section>
+    </SectionWithContainer>
   );
 }

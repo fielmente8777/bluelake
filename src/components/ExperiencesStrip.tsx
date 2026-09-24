@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { experienceCards } from "../data/content";
 import { ChevronLeftCircle, ChevronRightCircle } from "./icons";
+import { SectionWithContainer } from "./sectionComponants";
 
 // Duplicate cards array for seamless infinite circular looping on desktop
 const doubledCards = [...experienceCards, ...experienceCards];
@@ -83,14 +84,13 @@ export function ExperiencesStrip() {
   };
 
   return (
-    <section
-      id="experiences"
-      aria-labelledby="experiences-title"
-      className="bg-black px-5 pt-[70px] pb-[70px] sm:px-9 lg:px-12"
+    <SectionWithContainer
+      sectionId="experiences"
+      sectionProps={{ "aria-labelledby": "experiences-title" }}
+      sectionClassName="bg-black px-5 pt-[70px] pb-[70px] sm:px-9 lg:px-12"
+      defaultPadding={false}
     >
-      <div className="mx-auto max-w-[1370px]">
-
-        {/* ================= TOP HEADING ================= */}
+      {/* ================= TOP HEADING ================= */}
         <div className="mb-[42px] text-center">
 
           {/* SMALL LABEL */}
@@ -274,8 +274,6 @@ export function ExperiencesStrip() {
             you with nature and create unforgettable memories.
           </p>
         </div>
-
-      </div>
-    </section>
+    </SectionWithContainer>
   );
 }

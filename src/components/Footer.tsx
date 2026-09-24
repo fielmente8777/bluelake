@@ -12,6 +12,7 @@ import {
   SendIcon,
 } from "./icons";
 import Link from "next/link";
+import { Section, Container } from "./sectionComponants";
 
 export function Footer() {
   const [email, setEmail] = useState("");
@@ -30,8 +31,8 @@ export function Footer() {
   return (
     <>
       {/* ================= MANAGED BY BANNER ================= */}
-      <section
-        aria-labelledby="managed-title"
+      <Section
+        defaultPadding={false}
         className="relative h-[280px] overflow-hidden rounded-t-[32px] bg-navy-deep font-sans text-white sm:h-[345px] lg:h-[350px]"
       >
         <PhotoPlaceholder
@@ -43,52 +44,54 @@ export function Footer() {
 
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(11,37,69,0.85)_0%,rgba(11,37,69,0.60)_50%,rgba(11,37,69,0)_85%)] sm:bg-[linear-gradient(90deg,rgba(11,37,69,0.92)_0%,rgba(11,37,69,0.55)_45%,rgba(11,37,69,0.15)_100%)]" />
 
-        <div className="absolute inset-0 z-10 flex items-center px-5 py-4 sm:items-start sm:px-8 sm:pt-[40px] lg:px-[7.5%]">
-          <div className="max-w-[520px]">
-            {/* MANAGED BY */}
-            <p className="m-0 text-[14px] font-bold tracking-[0.08em] text-white uppercase sm:text-[16px]">
-              A UNIT OF
-            </p>
+        <div className="absolute inset-0 z-10 flex items-center sm:items-start sm:pt-[40px]">
+          <Container>
+            <div className="max-w-[520px]">
+              {/* MANAGED BY */}
+              <p className="m-0 text-[14px] font-bold tracking-[0.08em] text-white uppercase sm:text-[16px]">
+                A UNIT OF
+              </p>
 
-            {/* TITLE */}
-            <h2
-              id="managed-title"
-              className="font-cormorant! text-[20px] font-semibold text-white sm:mt-3 md:text-5xl uppercase"
-            >
-              Ante Meridiem
-            </h2>
+              {/* TITLE */}
+              <h2
+                id="managed-title"
+                className="font-cormorant! text-[20px] font-semibold text-white sm:mt-3 md:text-5xl uppercase"
+              >
+                Ante Meridiem
+              </h2>
 
-            {/* DESCRIPTION */}
-            <p className="mt-1.5 max-w-[520px] text-[13px] text-white sm:mt-[28px] sm:text-[18px]">
-              With a commitment to excellence, we bring world-class hospitality,
-              operational expertise and a passion for creating memorable stays.
-            </p>
+              {/* DESCRIPTION */}
+              <p className="mt-1.5 max-w-[520px] text-[13px] text-white sm:mt-[28px] sm:text-[18px]">
+                With a commitment to excellence, we bring world-class hospitality,
+                operational expertise and a passion for creating memorable stays.
+              </p>
 
-            {/* BOOK NOW */}
-            <button
-              type="button"
-              onClick={() => openBookingModal()}
-              className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4 cursor-pointer"
-            >
-              <span className="mr-3 flex items-center border-r border-navy-deep/30 pr-3">
-                <img
-                  src="/images/logo.jpeg"
-                  alt="Logo"
-                  className="h-5 w-auto object-contain"
-                />
-              </span>
-              Book Now
-            </button>
-          </div>
+              {/* BOOK NOW */}
+              <button
+                type="button"
+                onClick={() => openBookingModal()}
+                className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4 cursor-pointer"
+              >
+                <span className="mr-3 flex items-center border-r border-navy-deep/30 pr-3">
+                  <img
+                    src="/images/logo.jpeg"
+                    alt="Logo"
+                    className="h-5 w-auto object-contain"
+                  />
+                </span>
+                Book Now
+              </button>
+            </div>
+          </Container>
         </div>
-      </section>
+      </Section>
 
       {/* ================= FOOTER ================= */}
       <footer
         id="contact"
-        className="bg-navy-deep px-5 pt-8 font-sans text-text-on-dark sm:px-8 sm:pt-[42px] lg:px-16"
+        className="max_screen_width bg-navy-deep pt-8 font-sans text-text-on-dark sm:pt-[42px]"
       >
-        <div className="mx-auto max-w-[1280px]">
+        <Container>
           {/* ================= MAIN FOOTER CONTENT ================= */}
           <div className="grid gap-6 md:grid-cols-[1.15fr_1fr_1fr] md:gap-0">
             {/* ================= PLAN YOUR ESCAPE ================= */}
@@ -260,7 +263,7 @@ export function Footer() {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
       </footer>
     </>
   );

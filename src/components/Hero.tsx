@@ -10,6 +10,7 @@ import {
   PinIcon,
   WhatsAppIcon,
 } from "./icons";
+import { Section, Container } from "./sectionComponants";
 
 function formatDate(value: string) {
   if (!value) return null;
@@ -138,7 +139,7 @@ export function Hero({
   }
 
   return (
-    <section>
+    <Section defaultPadding={false} className="relative overflow-visible">
       {/* ================= HERO ================= */}
       <div className="relative">
         <PhotoPlaceholder
@@ -153,33 +154,35 @@ export function Hero({
 
         {/* HERO CONTENT */}
         <div
-          className={`absolute ${
+          className={`absolute pointer-events-none ${
             align === "center"
               ? "inset-0 flex flex-col items-center justify-center text-center"
-              : "bottom-[90px] left-0 text-left md:bottom-[130px]"
-          } w-full px-5 text-white sm:px-8 lg:px-16`}
+              : "bottom-[90px] left-0 right-0 text-left md:bottom-[130px]"
+          } w-full text-white`}
         >
-          {tagline && (
-            <p className="whitespace-nowrap py-3 text-[14px] font-semibold tracking-[0.06em] text-text-on-dark uppercase sm:text-base sm:tracking-[0.18em]">
-              {tagline}
-            </p>
-          )}
+          <Container className="pointer-events-auto">
+            {tagline && (
+              <p className="whitespace-nowrap py-3 text-[14px] font-semibold tracking-[0.06em] text-text-on-dark uppercase sm:text-base sm:tracking-[0.18em]">
+                {tagline}
+              </p>
+            )}
 
-          {title && (
-            <h1
-              className={`${
-                align === "center" ? "max-w-none" : "max-w-[14ch]"
-              } py-3 font-display text-[20px] font-semibold leading-[1.08] uppercase sm:text-[clamp(30px,5.5vw,52px)]`}
-            >
-              {title}
-            </h1>
-          )}
+            {title && (
+              <h1
+                className={`${
+                  align === "center" ? "max-w-none text-center" : "max-w-[14ch]"
+                } py-3 font-display text-[20px] font-semibold leading-[1.08] uppercase sm:text-[clamp(30px,5.5vw,52px)]`}
+              >
+                {title}
+              </h1>
+            )}
 
-          {subtitle && (
-            <p className="mt-[18px] text-[14px] max-w-[44ch] text-text-on-dark sm:text-base sm:max-w-[38ch]">
-              {subtitle}
-            </p>
-          )}
+            {subtitle && (
+              <p className="mt-[18px] text-[14px] max-w-[44ch] text-text-on-dark sm:text-base sm:max-w-[38ch]">
+                {subtitle}
+              </p>
+            )}
+          </Container>
         </div>
 
         {/* ================= SIDE CONTACT BUTTONS ================= */}
@@ -266,22 +269,23 @@ export function Hero({
       {/* ================= BOOKING BAR ================= */}
       {showBookingBar && (
         <>
-          <div className="relative z-10 -mt-[35px] px-4 md:-mt-[52px] md:px-0">
-        <form
-          aria-label="Check availability"
-          onSubmit={handleSubmit}
-          className="
-    relative mx-auto
-    grid w-full max-w-[1280px]
-    grid-cols-1
-    overflow-visible
-    rounded-[8px]
-    bg-white
-    shadow-[0_12px_35px_rgba(11,37,69,0.12)]
-    md:grid-cols-[1fr_1fr_1.2fr_auto]
-    md:items-stretch
-  "
-        >
+          <div className="relative z-10 -mt-[35px] md:-mt-[52px]">
+            <Container>
+              <form
+                aria-label="Check availability"
+                onSubmit={handleSubmit}
+                className="
+                  relative mx-auto
+                  grid w-full
+                  grid-cols-1
+                  overflow-visible
+                  rounded-[8px]
+                  bg-white
+                  shadow-[0_12px_35px_rgba(11,37,69,0.12)]
+                  md:grid-cols-[1fr_1fr_1.2fr_auto]
+                  md:items-stretch
+                "
+              >
           {/* ================= CHECK-IN ================= */}
           <label
             className="
@@ -661,27 +665,22 @@ export function Hero({
             Check Availability
           </button>
         </form>
-      </div>
+      </Container>
+    </div>
 
-      {/* ================= STATUS ================= */}
-      {status && (
-        <p
-          role="status"
-          className="
-            mx-auto
-            mt-2.5
-            max-w-[1280px]
-            px-4
-            text-xs
-            text-navy-deep
-            md:px-14
-          "
-        >
-          {status}
-        </p>
-      )}
+          {/* ================= STATUS ================= */}
+          {status && (
+            <Container>
+              <p
+                role="status"
+                className="mt-2.5 text-xs text-navy-deep"
+              >
+                {status}
+              </p>
+            </Container>
+          )}
         </>
       )}
-    </section>
+    </Section>
   );
 }
