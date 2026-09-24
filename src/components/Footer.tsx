@@ -134,7 +134,17 @@ export function Footer() {
                 />
 
                 <p className="m-0 text-[13px] leading-[1.5] text-text-on-dark sm:text-[14px]">
-                  {contactDetails.phones.join(" / ")}
+                  {contactDetails.phones.map((phone, idx) => (
+                    <span key={phone}>
+                      {idx > 0 && " / "}
+                      <Link
+                        href={`tel:${phone.replace(/\s+/g, "")}`}
+                        className="hover:text-white transition-colors"
+                      >
+                        {phone}
+                      </Link>
+                    </span>
+                  ))}
                 </p>
               </div>
 
@@ -156,7 +166,17 @@ export function Footer() {
                 </svg>
 
                 <p className="m-0 text-[13px] leading-[1.5] text-text-on-dark sm:text-[14px]">
-                  {contactDetails.email.join(" / ")}
+                  {contactDetails.email.map((item, idx) => (
+                    <span key={item}>
+                      {idx > 0 && " / "}
+                      <Link
+                        href={`mailto:${item}`}
+                        className="hover:text-white transition-colors"
+                      >
+                        {item}
+                      </Link>
+                    </span>
+                  ))}
                 </p>
               </div>
             </div>
