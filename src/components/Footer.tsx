@@ -65,6 +65,8 @@ export function Footer() {
                 With a commitment to excellence, we bring world-class hospitality,
                 operational expertise and a passion for creating memorable stays.
               </p>
+              <br/>
+
 
               {/* BOOK NOW */}
               <button
@@ -72,6 +74,7 @@ export function Footer() {
                 onClick={() => openBookingModal()}
                 className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4 cursor-pointer"
               >
+                
                 <span className="mr-3 flex items-center border-r border-navy-deep/30 pr-3">
                   <img
                     src="/images/logo.jpeg"

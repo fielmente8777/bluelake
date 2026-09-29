@@ -26,7 +26,7 @@ const WeOffer = () => {
       alt: "Conferences",
     },
     {
-      src: "/celebration/image 3.jpg.jpeg",
+      src: "/celebration/bluelake image 2.jpg.jpeg",
       alt: "Retreats",
     },
     {
@@ -34,7 +34,7 @@ const WeOffer = () => {
       alt: "Destination Weddings",
     },
     {
-      src: "/celebration/image 6 .jpg.jpeg",
+      src: "/celebration/image 6.jpg.jpeg",
       alt: "Social Gatherings",
     },
   ];
@@ -44,7 +44,6 @@ const WeOffer = () => {
       <div className="mx-auto max-w-7xl px-4">
 
         {/* ================= HEADING ================= */}
-
         <div className="mb-10 text-center">
 
           <div className="mb-4 flex items-center justify-center gap-3">
@@ -57,7 +56,7 @@ const WeOffer = () => {
             <span className="h-px w-8 bg-gold" />
           </div>
 
-          <h2 className="font-display text-[36px] font-medium leading-tight text-navy-deep md:text-[50px]">
+          <h2 className="font-display text-[20px] font-medium leading-tight text-navy-deep md:text-[40px]">
             Where Every Occasion Finds Its Perfect Setting
           </h2>
 
@@ -164,35 +163,31 @@ const WeOffer = () => {
 
           </div>
 
-          {/* ================= CONTROLS ================= */}
+{/* ================= CONTROLS ================= */}
 
-          <div className="mt-8 flex w-full items-center justify-center gap-8">
+<div className="mt-8 flex w-full items-center justify-center gap-3">
 
-            {/* PREVIOUS */}
+  {/* PREVIOUS */}
+  <button
+    type="button"
+    aria-label="Previous slide"
+    className="we-prev flex h-10 w-10 items-center justify-center rounded-full bg-[#294126] text-white transition-all duration-300 hover:bg-[#1f331d] active:scale-95"
+  >
+    <PrevBtnArrow />
+  </button>
 
-            <button
-              type="button"
-              aria-label="Previous slide"
-              className="we-prev flex h-10 w-10 items-center justify-center text-[#063333] transition-all duration-300 hover:text-[#D1BA97] active:scale-95"
-            >
-              <PrevBtnArrow />
-            </button>
+   <div className="we-pagination flex items-center w-fit justify-center gap-2" />
 
-            {/* PAGINATION */}
+  {/* NEXT */}
+  <button
+    type="button"
+    aria-label="Next slide"
+    className="we-next flex h-10 w-10 items-center justify-center rounded-full bg-[#294126] text-white transition-all duration-300 hover:bg-[#1f331d] active:scale-95"
+  >
+    <NextBtnArrow />
+  </button>
 
-            <div className="we-pagination flex items-center justify-center gap-2" />
-
-            {/* NEXT */}
-
-            <button
-              type="button"
-              aria-label="Next slide"
-              className="we-next flex h-10 w-10 items-center justify-center text-[#063333] transition-all duration-300 hover:text-[#D1BA97] active:scale-95"
-            >
-              <NextBtnArrow />
-            </button>
-
-          </div>
+</div>
 
         </div>
 
@@ -202,8 +197,8 @@ const WeOffer = () => {
 
       <style jsx global>{`
         .we-pagination .swiper-pagination-bullet {
-          width: 25px;
-          height: 25px;
+          width: 18px;
+          height: 18px;
           margin: 0 !important;
           border-radius: 9999px;
           background: #f1eee8;
@@ -240,47 +235,57 @@ const WeOffer = () => {
 
 export default WeOffer;
 
-
-/* =========================================================
-   PREVIOUS BUTTON
-========================================================= */
-
 export const PrevBtnArrow = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="20"
-      viewBox="0 0 29 16"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
-      className="h-5 w-9"
+      xmlns="http://www.w3.org/2000/svg"
     >
+      <circle
+        cx="12"
+        cy="12"
+        r="9"
+        stroke="white"
+        strokeWidth="1.5"
+      />
+
       <path
-        d="M0.292892 8.70711C-0.0976315 8.31658 -0.0976315 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM29 9H1V7H29V9Z"
-        fill="currentColor"
+        d="M13.5 8.5L10 12L13.5 15.5"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
 };
 
-
-/* =========================================================
-   NEXT BUTTON
-========================================================= */
-
 export const NextBtnArrow = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="36"
-      height="20"
-      viewBox="0 0 29 16"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
-      className="h-5 w-9"
+      xmlns="http://www.w3.org/2000/svg"
     >
+      <circle
+        cx="12"
+        cy="12"
+        r="9"
+        stroke="white"
+        strokeWidth="1.5"
+      />
+
       <path
-        d="M28.7071 8.70711C29.0976 8.31658 29.0976 7.68342 28.7071 7.29289L22.3431 0.928932C21.9526 0.538408 21.3195 0.538408 20.9289 0.928932C20.5384 1.31946 20.5384 1.95262 20.9289 2.34315L26.5858 8L20.9289 13.6569C20.5384 14.0474 20.5384 14.6805 20.9289 15.0711C21.3195 15.4616 21.9526 15.4616 22.3431 15.0711L28.7071 8.70711ZM0 9H28V7H0V9Z"
-        fill="currentColor"
+        d="M10.5 8.5L14 12L10.5 15.5"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

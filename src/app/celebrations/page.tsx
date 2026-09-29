@@ -48,19 +48,19 @@ export default function CelebrationsPage() {
     
 
       <SectionWithContainer
-        sectionClassName="py-[55px] md:py-[75px]"
-        containerClassName="max-w-[1250px]"
-        defaultPadding={false}
+        // // sectionClassName="py-[55px] md:py-[55px]"
+        // containerClassName="max-w"
+        // defaultPadding={false}
       >
         <div className="px-5 md:px-6">
           <Events {...EventsData} />
         </div>
       </SectionWithContainer>
-
+      <div className="h-px w-full bg-navy-deep" />
       <SectionWithContainer
-        sectionClassName="bg-white py-[55px] md:py-[85px]"
-        containerClassName="max-w-[1250px]"
-        defaultPadding={false}
+        // // sectionClassName="bg-white pt-[20px] pb-[55px] md:pt-[25px] md:pb-[45px]"
+        // containerClassName="max-w"
+        // defaultPadding={false}
       >
         <div className="px-5 md:px-6">
           <WeOffer />
