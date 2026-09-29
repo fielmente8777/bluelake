@@ -74,7 +74,7 @@ export default function Events({
         {/* ================= IMAGE ================= */}
 
         {image && (
-          <div className="relative mx-auto mt-10 w-full overflow-hidden rounded-[3px] md:mt-12">
+          <div className="relative mx-auto mt-5 w-full overflow-hidden rounded-[3px] md:mt-12">
             <div className="relative aspect-[16/6.2] w-full">
 
               <Image
