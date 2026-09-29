@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { galleryImages } from "../data/content";
 import { ChevronLeftCircle, ChevronRightCircle } from "./icons";
+import { SectionWithContainer } from "./sectionComponants";
 
 export function Gallery() {
   // Show only 4 images on desktop single row
@@ -28,14 +29,13 @@ export function Gallery() {
   };
 
   return (
-    <section
-      id="gallery"
-      aria-labelledby="gallery-title"
-      className="bg-off-white px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
+    <SectionWithContainer
+      sectionId="gallery"
+      sectionProps={{ "aria-labelledby": "gallery-title" }}
+      sectionClassName="bg-off-white px-5 pt-[58px] pb-[65px] sm:px-8 lg:px-[52px]"
+      defaultPadding={false}
     >
-      <div className="mx-auto max-w-[1370px]">
-
-        {/* Header */}
+      {/* Header */}
         <div className="mb-[38px] flex flex-col items-center text-center">
           <p className="flex items-center gap-2 font-sans text-[14px] font-bold tracking-[0.16em] text-gold uppercase sm:text-[24px]">
             <span className="block h-px w-[20px] bg-gold" />
@@ -143,8 +143,6 @@ export function Gallery() {
             View All
           </a>
         </div>
-
-      </div>
-    </section>
+    </SectionWithContainer>
   );
 }

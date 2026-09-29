@@ -7,6 +7,7 @@ import {
   LakesideIcon,
   PremiumStayIcon,
 } from "./icons";
+import { SectionWithContainer } from "./sectionComponants";
 
 const iconMap = {
   lakeside: LakesideIcon,
@@ -19,10 +20,11 @@ const iconMap = {
 
 export function FeatureStrip() {
   return (
-    <section
-      id="about"
-      aria-labelledby="feature-strip-title"
-      className="flex flex-col gap-2 text-center sm:px-8 lg:px-[52px]"
+    <SectionWithContainer
+      sectionProps={{ "aria-labelledby": "feature-strip-title" }}
+      sectionClassName="bg-off-white text-center"
+      containerClassName="flex flex-col gap-2 items-center"
+      defaultPadding={false}
     >
       {/* TOP LABEL */}
       <p className="m-0 flex items-center justify-center gap-3 font-sans text-[14px] font-bold tracking-[0.15em] text-gold uppercase sm:text-[24px]">
@@ -129,6 +131,6 @@ export function FeatureStrip() {
           );
         })}
       </ul>
-    </section>
+    </SectionWithContainer>
   );
 }

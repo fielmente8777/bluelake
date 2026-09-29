@@ -178,7 +178,7 @@ export const policiesPageData: PolicyPageItem[] = [
         <p>Withdrawal of consent does not ordinarily affect processing already carried out lawfully before withdrawal, and certain information may still need to be retained where required by law or for permitted operational purposes.</p>
 
         <h3>17. Marketing Opt-Out</h3>
-        <p>You can request removal from promotional communication lists through the opt-out method provided in the relevant message, by replying to applicable WhatsApp or SMS communications where supported, or by contacting us at info@amhotels.in.</p>
+        <p>You can request removal from promotional communication lists through the opt-out method provided in the relevant message, by replying to applicable WhatsApp or SMS communications where supported, or by contacting us at <a href="mailto:info@amhotels.in" style="color: inherit; text-decoration: underline;">info@amhotels.in</a>.</p>
         <p>Please note that transactional and operational communications relating to an active booking, payment, stay, complaint, event or contractual obligation may continue even after promotional communications have been stopped.</p>
 
         <h3>18. Data Breach Response</h3>
@@ -278,7 +278,7 @@ export const policiesPageData: PolicyPageItem[] = [
           padding: 0.5rem;
         "
       >
-        info@amhotels.in
+        <a href="mailto:info@amhotels.in" style="color: inherit; text-decoration: underline;">info@amhotels.in</a>
       </td>
     </tr>
   </tbody>
