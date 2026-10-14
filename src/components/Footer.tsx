@@ -65,7 +65,7 @@ export function Footer() {
                 With a commitment to excellence, we bring world-class hospitality,
                 operational expertise and a passion for creating memorable stays.
               </p>
-              <br/>
+              <br />
 
 
               {/* BOOK NOW */}
@@ -74,7 +74,7 @@ export function Footer() {
                 onClick={() => openBookingModal()}
                 className="mt-2 inline-flex items-center bg-white px-5 py-3 text-[12px] font-bold tracking-[0.06em] !text-navy-deep uppercase transition-colors hover:bg-gray-100 sm:mt-[24px] sm:px-7 sm:py-4 cursor-pointer"
               >
-                
+
                 <span className="mr-3 flex items-center border-r border-navy-deep/30 pr-3">
                   <img
                     src="/images/logo.jpeg"
@@ -115,7 +115,12 @@ export function Footer() {
                 Location
               </h3>
 
-              <div className="flex gap-2.5 py-2 sm:py-3">
+              <Link
+                href={contactDetails.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-2.5 py-2 sm:py-3"
+              >
                 <PinIcon
                   aria-hidden="true"
                   className="mt-px h-4 w-4 shrink-0 text-white sm:h-5 sm:w-5"
@@ -124,7 +129,7 @@ export function Footer() {
                 <p className="m-0 text-[13px] text-text-on-dark sm:text-[14px]">
                   {contactDetails.address}
                 </p>
-              </div>
+              </Link>
 
               <h3 className="mb-2 mt-2 font-sans text-[13px] font-bold text-white uppercase sm:mb-3 sm:mt-0 sm:text-[14px]">
                 Phone

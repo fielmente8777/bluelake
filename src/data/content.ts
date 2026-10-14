@@ -149,8 +149,8 @@ export const galleryImages = [
 ];
 
 export const contactDetails = {
-  address:"Murambi, Gate no. 858 Wadiwarhe-Ahurli, Road, Igatpuri, Maharashtra 422010",
+  address: "Murambi, Gate no. 858 Wadiwarhe-Ahurli, Road, Igatpuri, Maharashtra 422010",
+  mapUrl: "https://share.google/P2DDIrFSnwFOq0Ub5",
   phones: ["+91 80-65072001", "+91 8554-929929"],
-  email: ["sales@amhotels.in",
-     "info@amhotels.in"],
+  email: ["sales@amhotels.in", "info@amhotels.in"],
 };
