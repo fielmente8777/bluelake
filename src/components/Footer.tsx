@@ -144,7 +144,7 @@ export function Footer() {
                 <p className="m-0 text-[13px] leading-[1.5] text-text-on-dark sm:text-[14px]">
                   {contactDetails.phones.map((phone, idx) => (
                     <span key={phone}>
-                      {idx > 0 && " / "}
+                      {idx > 0 && ", "}
                       <Link
                         href={`tel:${phone.replace(/\s+/g, "")}`}
                         className="hover:text-white transition-colors"
@@ -176,7 +176,7 @@ export function Footer() {
                 <p className="m-0 text-[13px] leading-[1.5] text-text-on-dark sm:text-[14px]">
                   {contactDetails.email.map((item, idx) => (
                     <span key={item}>
-                      {idx > 0 && " / "}
+                      {idx > 0 && ", "}
                       <Link
                         href={`mailto:${item}`}
                         className="hover:text-white transition-colors"
