@@ -1,4 +1,6 @@
+
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 import { Cormorant_Garamond } from "next/font/google";
@@ -14,13 +16,23 @@ export const metadata: Metadata = {
   title: "The Blue Lake, Igatpuri | Lakeside Resort",
   description:
     "A serene lakeside resort in Murambi, Igatpuri, where nature's calm meets refined comfort.",
+  verification: {
+    google: "cwk_S12joArt0ON48RbBQbSf5mZQ5Lq2e5agyKZrWFY",
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.googleapis.com"
+        />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -31,7 +43,23 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           rel="stylesheet"
         />
       </head>
-      <body className={`${cormorant.variable}`}>
+
+      <body className={cormorant.variable}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2HKW7967Z3"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-2HKW7967Z3');
+          `}
+        </Script>
+
         <BookingProvider>
           {children}
           <BookingModal />
